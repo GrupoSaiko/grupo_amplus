@@ -1,0 +1,81 @@
+.servicios {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  gap: 0 1rem;
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  border: 0.15rem solid var(--primaryColor);
+  border-style: none none solid none;
+}
+.title svg,
+.title img {
+  height: 30px;
+}
+
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  ;
+}
+.article .section {
+  width: 25%;
+}
+
+/* Estilo base de las tarjetas */
+.section {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.14);
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de elevación al pasar el ratón */
+.section:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilo del título de la tarjeta */
+.section h2 {
+  color: var(--primaryColor);
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+/* Estilo del texto de la tarjeta */
+.section p {
+  color: var(--primaryColor);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Estilo del botón de la tarjeta */
+.section a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Efecto de cambio de color al pasar el ratón sobre el botón */
+.section a.button:hover {
+  background-color: #45a049;
+}
+

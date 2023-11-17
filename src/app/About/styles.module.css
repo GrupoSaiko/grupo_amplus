@@ -1,0 +1,24 @@
+.about {
+  /* background: #ffffff; */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.3px);
+  -webkit-backdrop-filter: blur(12.3px);
+  padding: 10px 20px;
+  display: inline-flex;
+  border-radius: 10px;
+  gap: 0 1rem;
+  width: 100%;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.about img {
+  border-radius: 50%;
+}
+
+.about p {
+  font-size: 1.5rem;
+}
