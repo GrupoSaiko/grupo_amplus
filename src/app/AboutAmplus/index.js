@@ -24,7 +24,7 @@ export default function AboutAmplus({
       </div>
 
       <div className={ui.navigation}>
-        <Link href={backward}>
+        <Link className={backward === "#" ? 'disabled' : null} href={backward}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -41,7 +41,7 @@ export default function AboutAmplus({
         </svg>
         </Link>
 
-        <Link href={forward}>
+        <Link className={forward==="#" ? 'disabled' : null} href={forward}>
         
         <svg
           xmlns="http://www.w3.org/2000/svg"
