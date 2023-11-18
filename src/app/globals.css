@@ -1,12 +1,35 @@
 :root {
   --blue: rgb(46, 165, 230);
-  --blueHover:rgb(55, 145, 194);
+  --blueHover: rgb(55, 145, 194);
   --primaryColor: rgb(84, 84, 74);
   --secondaryColor: rgb(26, 26, 25);
   --primaryBackground: rgb(250, 250, 250);
+  /** CSS LIGHT THEME PRIMARY COLORS */
+  --color-primary-100: #8ec7e5;
+  --color-primary-200: #b3d3eb;
+  --color-primary-300: #c8e0f1;
+  --color-primary-400: #d9ebf5;
+  --color-primary-500: #ebf7fa;
+  --color-primary-600: #f4f9fc;
+
+  /** CSS LIGHT THEME SURFACE COLORS */
+  --color-surface-100: #f4f4f4;
+  --color-surface-200: #e8e8e8;
+  --color-surface-300: #dbdbdb;
+  --color-surface-400: #cccccc;
+  --color-surface-500: #bfbfbf;
+  --color-surface-600: #aaaaaa;
+
+  /** CSS LIGHT THEME MIXED SURFACE COLORS */
+  --color-surface-mixed-100: #e6e8e9;
+  --color-surface-mixed-200: #d7dadb;
+  --color-surface-mixed-300: #c2c6c8;
+  --color-surface-mixed-400: #acb2b4;
+  --color-surface-mixed-500: #959a9c;
+  --color-surface-mixed-600: #7d8284;
 }
 
-*{ 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,12 +46,11 @@ body {
 
 nav,
 footer {
-  background: var(--primaryBackground);
+  background: var(--color-surface-100);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-
-nav img{
+nav img {
   height: 100%;
   width: -webkit-fill-available;
   object-fit: contain;
@@ -38,12 +60,11 @@ nav img{
 nav {
   display: flex;
   font-weight: bold;
-  gap:0 1rem;
-  font-size: 1.35rem;
+
+  font-size: 1rem;
   position: sticky;
   height: 10vh;
   top: 0;
-  background: var(--primaryBackground);
   align-items: center;
   > a:nth-of-type(1) {
     padding: 0 20px;
@@ -52,7 +73,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 100%;
-    cursor: url("/link.png"), auto;  
+    cursor: url("/link.png"), auto;
     position: relative;
     &:hover {
       transition: background 0.3s ease; /* Agrega una transición al cambio de color de fondo */
@@ -70,7 +91,7 @@ nav {
     }
   }
 
-  > a:nth-of-type(n + 2) {
+  > a:nth-of-type(n + 1) {
     color: var(--primaryColor);
     min-width: 100px;
     transition: all 0.35s ease;
@@ -101,10 +122,29 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-main{
-  background: url("/bg_light.gif") no-repeat;
-  background-size: cover;
-  background-position: center;
+.main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+}
+
+.main > video {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  object-fit: cover;
+  opacity: 0.4;
+
+}
+
+.main > main {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 1;
 }
 
 footer {
@@ -119,13 +159,6 @@ footer {
   gap: 0 1rem;
 }
 
-/* main {
-  background: linear-gradient(189deg, #dff2fc, #f7f7f7);
-  background-size: 120% 120%;
-  animation: gradient-animation 10s ease infinite;
-} */
-
-
 .cursor {
   cursor: url("/link.png"), auto;
 }
@@ -136,30 +169,40 @@ button {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem; /* 2.5 veces el tamaño base (40px) */
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem; /* 2 veces el tamaño base (32px) */
+}
+
+h3 {
+  font-size: 1.75rem; /* 1.75 veces el tamaño base (28px) */
 }
 
 p {
-  line-height: 1.6rem;
+  font-size: 1rem; /* Tamaño base del texto (16px) */
+  line-height: 1.5; /* Espaciado entre líneas para mejorar la legibilidad */
+}
+
+button {
+  font-size: 1rem; /* Tamaño base del texto para botones (16px) */
+  padding: 0.75rem 1.5rem; /* Ajusta el relleno para que se vea bien en botones */
 }
 
 button {
   border: none;
-  background: var(--blue);
+  font-weight: 800;
+  background: var(--color-primary-600);
   color: rgb(247, 247, 247);
   padding: 0.938rem 2.5rem;
-  border-radius: 5px;
-  font-size: 1.25rem;
+  border-radius: 9999999999999px;
+  font-size: 1rem;
   transition: background 0.25s ease;
+  font-family: inherit;
+  color: rgb(12, 12, 12);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-&:hover{
-  background: var(--blueHover);
-}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -168,27 +211,39 @@ button {
     --primaryColor: #ffffff;
     --secondaryColor: #fdfdfd;
     --primaryBackground: #181818;
+
+    /* https://colorffy.com/dark-theme-generator */
+    /** CSS DARK THEME PRIMARY COLORS */
+    --color-primary-100: #2a93cc;
+    --color-primary-200: #4f9ed2;
+    --color-primary-300: #6aaad8;
+    --color-primary-400: #82b6dd;
+    --color-primary-500: #98c2e3;
+    --color-primary-600: #adcee9;
+    /** CSS DARK THEME SURFACE COLORS */
+    --color-surface-100: #121212;
+    --color-surface-200: #282828;
+    --color-surface-300: #3f3f3f;
+    --color-surface-400: #575757;
+    --color-surface-500: #717171;
+    --color-surface-600: #8b8b8b;
+    /** CSS DARK THEME MIXED SURFACE COLORS */
+    --color-surface-mixed-100: #181e22;
+    --color-surface-mixed-200: #2d3337;
+    --color-surface-mixed-300: #44494c;
+    --color-surface-mixed-400: #5c6063;
+    --color-surface-mixed-500: #75797b;
+    --color-surface-mixed-600: #8f9294;
   }
 
-  button {
-    background: var(--blue);
-    color: var(--primaryColor);
+  .main > video {
+    filter: brightness(0.45);
+    opacity: 1;
+  
   }
-
-  main{
-    background: url("/bg.gif") no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  /* main {
-    background: linear-gradient(189deg, #232323, #050505);
-    background-size: 120% 120%;
-    animation: gradient-animation 10s ease infinite;
-  } */
 
   nav {
-    > a:nth-of-type(n + 2) {
+    > a:nth-of-type(n + 1) {
       color: var(--primaryColor);
       &:hover {
         background: #303030;
@@ -200,14 +255,37 @@ button {
   }
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
+
+@media (max-width: 1200px) {
+  * {
+    font-size: 18px;
   }
-  50% {
-    background-position: 100% 50%;
+}
+
+@media (max-width: 992px) {
+  * {
+    font-size: 16px;
   }
-  100% {
-    background-position: 0% 50%;
+}
+
+@media (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+@keyframes reveal{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
   }
 }

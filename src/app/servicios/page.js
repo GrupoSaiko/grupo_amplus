@@ -25,11 +25,7 @@ export default function Servicios() {
             <h2>Servicios administrados</h2>
           </div>
           <p>
-            Deja que nosotros nos ocupemos de la gestión integral de tus
-            sistemas y tecnologías. Desde el monitoreo proactivo hasta la
-            seguridad de la información y el soporte continuo, garantizamos que
-            tu infraestructura tecnológica funcione de manera eficiente y
-            segura.
+          Nos encargamos del mantenimiento, la actualización y la seguridad de tus sistemas, para que tú te enfoques en tu negocio.
           </p>
         </section>
         <section className={ui.section}>
@@ -52,23 +48,16 @@ export default function Servicios() {
             <h2>Servicios de acompañamiento</h2>
           </div>
           <p>
-            No solo somos consultores, somos colaboradores a largo plazo.
-            Trabajamos codo a codo contigo, alineando nuestras soluciones con
-            tus metas estratégicas, proporcionando capacitación constante y
-            ajustando nuestros servicios para evolucionar junto con tu empresa.
+          Te brindamos asesoría, capacitación y soporte técnico para que aproveches al máximo las herramientas que te ofrecemos.
           </p>
         </section>
         <section className={ui.section}>
           <div className={ui.title}>
-            {/* <img src="/public/sharepoint.svg" alt="sharepoint_logo"> */}
+            <img src="/sharepoint.svg" alt="sharepoint_logo"/>
             <h2>Implementación SharePoint</h2>
           </div>
           <p>
-            Diseñamos y ejecutamos la implementación de SharePoint, la
-            plataforma líder en colaboración y gestión de contenidos de
-            Microsoft. Desde la configuración inicial hasta la personalización y
-            el soporte continuo, nos aseguramos de que SharePoint se alinee
-            perfectamente con tus objetivos comerciales.
+          Te ofrecemos una solución integral para la gestión de documentos, la colaboración y la comunicación en tu organización.
           </p>
         </section>
         <section className={ui.section}>
@@ -91,10 +80,7 @@ export default function Servicios() {
             <h2>Migración de correo</h2>
           </div>
           <p>
-            Facilitamos la transición sin problemas de tu plataforma de correo
-            electrónico actual a una solución más eficiente y segura. Nuestros
-            consultores de TI manejan cada aspecto de la migración, asegurándose
-            de que tus datos estén seguros y accesibles en todo momento.
+          Te ayudamos a migrar tu correo electrónico a la nube, con seguridad, rapidez y eficiencia.
           </p>
         </section>
         <section className={ui.section}>
@@ -117,11 +103,7 @@ export default function Servicios() {
             <h2>Desarrollo de Software</h2>
           </div>
           <p>
-            Desde aplicaciones empresariales hasta soluciones específicas,
-            nuestro equipo de desarrollo de software crea productos
-            personalizados para satisfacer tus necesidades únicas. Aportamos
-            innovación y eficiencia a través de soluciones tecnológicas a
-            medida.
+          Creamos soluciones a medida para tus necesidades, usando las mejores tecnologías y metodologías.
           </p>
         </section>
       </article>

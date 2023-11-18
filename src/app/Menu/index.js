@@ -1,15 +1,33 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Menu() {
   return (
     <nav>
-      <a href="/">
-        <img src="/logo.png" alt="logo_de_amplus" />
-      </a>
-      <a href="/">Inicio</a>
-      <a href="/nosotros">Nosotros</a>
-      <a href="/servicios">Servicios</a>
-      <a href="/praxia">Productos</a>
+      <Link href="/">
+        <img src="/amplus_logo.svg" alt="logo_de_amplus" />
+      </Link>
+
+      <Link href="/">
+        Inicio
+      </Link>
+
+      <Link href="/nosotros">
+        Nosotros
+      </Link>
+
+      <Link href={"/servicios"}>
+        Servicios
+      </Link>
+
+      <Link href={"/praxia"}>
+        Productos
+      </Link>
+
+      <Link href="/contacto">
+        Contacto
+      </Link>
+
     </nav>
   );
 }

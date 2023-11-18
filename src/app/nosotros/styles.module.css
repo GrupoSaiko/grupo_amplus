@@ -1,50 +1,28 @@
 .aboutUs {
+  /* background: rgba(255, 255, 255,0.85); */
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  width: 50%;
-  gap: 1rem 0;
-}
-
-.aboutUs h1 {
-  text-align: center;
-}
-
-.aboutUsCards {
-  display: flex;
-  flex-wrap: wrap;
-  gap:1rem 0;
-  justify-content: space-evenly;
+  
   width: 100%;
-}
-
-.aboutUsCards > article{
-    width: 47%;
-}
-
-.us {
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.26);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(12.3px);
-  -webkit-backdrop-filter: blur(12.3px);
-  padding: 1rem 2rem;
-}
-
-.us > h1 {
-  font-size: 2.5rem;
-}
-
-.us p {
-  font-size: 1.5rem;
-  text-align: justify;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.aboutUs section{
+  padding: 100px;
+  scroll-snap-align: center;
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+}
+@keyframes reveal{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
 }
