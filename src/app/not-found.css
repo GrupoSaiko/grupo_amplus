@@ -37,6 +37,11 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
+  .error404{
+    background:#252525;
+  }
+
   .error404::after {
     filter: invert();
   }

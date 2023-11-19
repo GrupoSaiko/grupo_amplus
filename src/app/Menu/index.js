@@ -1,9 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import ui from './styles.module.css'
 
 export default function Menu() {
   return (
-    <nav>
+    <nav className={ui.nav}>
       <Link href="/">
         <img src="/amplus_logo.svg" alt="logo_de_amplus" />
       </Link>

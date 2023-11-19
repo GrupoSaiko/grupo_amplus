@@ -4,11 +4,16 @@
   align-items: center;
   gap: 1rem 0;
 }
-.amplus h1 {
+
+.amplus button{
+  width: 100%;
+}
+
+.amplus h1 , .amplus h2 {
   text-align: center;
 }
-.amplus p {
-  text-align: center;
+.amplus h2 {
+  font-weight: normal;
 }
 
 .amplus > section {
@@ -20,6 +25,11 @@
   gap: 1rem 0;
   padding: 20px;
 }
+
+.amplus a {
+  width: 100%;
+}
+
 .amplus > section img {
   position: absolute;
 }
@@ -51,3 +61,14 @@
   border-style: none none solid none;
   margin: 0 0 1rem 0;
 } /*# sourceMappingURL=index.css.map */
+
+@media screen and (max-width: 480px) {
+  .amplus > section {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .amplus > section {
+    width: 70%;
+  }
+}

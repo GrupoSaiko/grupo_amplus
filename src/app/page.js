@@ -7,10 +7,10 @@ export default function Home() {
       <article className={ui.amplus}>
         <section>
           <h1>Uniendo Talentos para Transformar Resultados</h1>
-          <p>
+          <h2>
             Fusionamos talento y experiencia para ofrecer servicios TI de alta
             calidad y soluciones impactantes
-          </p>
+          </h2>
 
           <Link href={"/contacto"}>
             <Button>Contactanos</Button>
