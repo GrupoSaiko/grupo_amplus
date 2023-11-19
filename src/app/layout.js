@@ -1,5 +1,6 @@
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
+import "./not-found.css";
 import Menu from "./Menu";
 import Footer from "./Footer";
 
