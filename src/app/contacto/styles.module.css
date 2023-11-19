@@ -1,0 +1,34 @@
+.contact {
+  display: flex;
+  gap: 0 20px;  
+  justify-content: center;
+  height: 100%;
+  padding:20px 50px;
+  overflow: auto;
+}
+
+.formContact{
+  display: flex;
+  flex-direction: column;
+  gap:10px 0;
+}
+
+.formContact form{
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  justify-content: space-between;
+}
+
+.formContact form div:last-of-type{
+  grid-column: 1/3;
+}
+
+.contact iframe{
+  position: sticky;
+  left:0;
+  top:0;
+}
+
+.contact iframe{
+    width: 50%;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import ui from './styles.module.css';
 
 /**
  * Render an input element
@@ -7,6 +8,6 @@ import React from 'react'
  */
 export default function Input(props) {
   return (
-    <input type="text" {...props}/>
+    <input type="text" className={ui.input} {...props}/>
   )
 }
