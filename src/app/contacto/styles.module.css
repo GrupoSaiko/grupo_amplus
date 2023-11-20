@@ -8,6 +8,7 @@
 
 .contact > *{
   padding: 30px;
+  width: 100%;
 }
 
 .module {
@@ -44,7 +45,6 @@
 
 
 @media screen and (max-width: 480px) {
-
   .formContact form {
     display: flex;
     flex-direction: column;
@@ -54,8 +54,17 @@
 @media screen and (max-width: 769px) {
   .contact {
     display: flex;
-    gap: 1rem 0;
+    gap: 0;
     flex-flow: column-reverse;
+  }
+
+  .contact > *{
+    padding: 15px;
+
+  }
+
+  .contact > *:nth-child(1){
+    height: 30%;
   }
 }
 
