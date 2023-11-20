@@ -1,0 +1,28 @@
+.googleMaps {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  width: 100%;
+  grid-template-rows: repeat(10, 10%);
+  height: 100%;
+}
+
+.googleMaps iframe {
+  grid-column: 1/11;
+  grid-row: 1/11;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.loadingMap {
+  grid-column: 4/8;
+  grid-row: 4/8;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px 0;
+  text-align: center;
+}

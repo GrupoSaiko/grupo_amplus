@@ -7,4 +7,29 @@
   font-weight: bold;
   content: "*";
   margin: 0 5px;
+  vertical-align: super;
+  font-size: smaller; 
+}
+
+.currentLength{
+  margin:0 0 0 5px;
+}
+
+.currentLength , .maxLenght{
+  vertical-align: super;
+  font-size: smaller; 
+}
+
+.currentLength::before {
+  content: "(";
+  margin:0 2.5px 0 0;
+}
+.currentLength::after {
+  content: "/";
+  margin:0 2.5px 0 2.5px;
+}
+
+.maxLenght::after{
+  content:")";
+  margin:0 0 0 2.5px;
 }

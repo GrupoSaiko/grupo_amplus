@@ -16,6 +16,10 @@
   font-size: 1rem;
 }
 
+.button:disabled{
+  cursor: url("/disabled.png"), auto;
+}
+
 .button:hover {
   outline: var(--outline);
   outline-offset: -6px;

@@ -3,6 +3,7 @@ import "./globals.css";
 import "./not-found.css";
 import Menu from "./Menu";
 import Footer from "./Footer";
+import Head from "next/head";
 
 const inter = Noto_Sans({ subsets: ["latin"], weight: "300" });
 

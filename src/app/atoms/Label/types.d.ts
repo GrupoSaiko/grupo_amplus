@@ -4,4 +4,12 @@ export interface LabelProps
     HTMLLabelElement
   > {
   displayRequiredSymbol?: boolean;
+  maxLength?: number | null;
+  currentLength?: number | null;
 }
+
+export interface LengthInputI {
+  current?: number;
+  max?: number;
+}
+
