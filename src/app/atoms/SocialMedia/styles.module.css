@@ -3,10 +3,23 @@
   gap: 0 5px;
   padding: 5px 10px;
   align-items: center;
-  background: var(--color-surface-200);
+  background: var(--color-surface-100);
   border-radius: 5px;
+  text-decoration: none;
 }
 
-.socialMedia img{
-    height: 20px;
+.socialMedia img {
+  height: 20px;
+}
+
+.socialMedia:hover {
+  text-decoration: underline;
+  color:var(--blue);
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+  .socialMedia img {
+    filter: invert();
+  }
 }
