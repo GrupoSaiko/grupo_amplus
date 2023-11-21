@@ -23,7 +23,6 @@ export default function Productos() {
           <div className={ui.title}>
             <p>Sistema de administración</p>
             <p>No trabajes para el sistema, Praxia trabaja para ti</p>
-            <GrupoSaikoSocialMedia />
           </div>
         </div>
 
@@ -49,6 +48,7 @@ export default function Productos() {
               proveedores, tesorería, entre otros
             </li>
           </ul>
+          <GrupoSaikoSocialMedia />
         </div>
       </div>
     </div>
