@@ -17,8 +17,8 @@ export async function POST(req) {
 
     const responseEmail = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: ["gskitcat@gmail.com"],
-      subject: "Hello World",
+      to: [process.env.RESEND_EMAIL_DEV],
+      subject: "Grupo Amplus - Contacto",
       html: `
       <p>
         <b>Nombre:</b>
