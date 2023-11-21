@@ -1,0 +1,33 @@
+.servicio img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  object-position: center;
+}
+
+.servicio {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 35% 65%;
+  background: var(--color-surface-100);
+  transform: skew(-12deg);
+  transform-origin: top left;
+  box-shadow: rgba(0, 0, 0, 1) 0px 10px 50px;
+}
+
+.servicioContenido {
+  padding: 15px;
+  margin: 0;
+}
+
+.servicio p {
+  font-size: 0.85rem;
+}
+
+.servicioContenido h2 {
+    margin:0 0 10px 0;
+    padding:0 0 10px 0;
+    border:3px solid var(--color-primary-100);
+    border-style: none none solid none;
+}
