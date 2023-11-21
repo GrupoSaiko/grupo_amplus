@@ -1,0 +1,95 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: var(--color-surface-100);
+  overflow: auto;
+}
+
+.flyer1 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 70% 30%;
+  height: 100%;
+}
+
+.headerFlyer1 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+  position: sticky;
+  top: 0;
+}
+
+.contentFlyer1 {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: space-evenly;
+  overflow: auto;
+}
+
+.contentFlyer1 p {
+  font-weight: normal;
+  text-align: justify;
+}
+
+.bgHeaderFlyer1 {
+  grid-column: 1/11;
+  grid-row: 1/11;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 100%);
+}
+
+.praxia {
+  z-index: 1;
+  text-align: center;
+}
+
+.container video {
+  object-fit: contain;
+  height: 100%;
+}
+
+.container video::-webkit-media-controls-timeline{
+  display: none;
+}
+
+.praxiaVideo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 75%;
+  grid-column: 4/8;
+  grid-row: 2/7;
+}
+
+.title {
+  display: flex;
+  gap: 5px 0;
+  flex-direction: column;
+  grid-column: 1/11;
+  grid-row: 7/10;
+  z-index: 1;
+  text-align: center;
+}
+
+.container video::-webkit-media-controls-panel {
+  background-image: linear-gradient(transparent, transparent) !important;
+}
+
+.container video::-webkit-box-shadow {
+  box-shadow: none;
+}
+
+.praxia img {
+  width: 60%;
+}

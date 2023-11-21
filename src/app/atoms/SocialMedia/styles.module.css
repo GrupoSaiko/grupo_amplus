@@ -1,0 +1,12 @@
+.socialMedia {
+  display: inline-flex;
+  gap: 0 5px;
+  padding: 5px 10px;
+  align-items: center;
+  background: var(--color-surface-200);
+  border-radius: 5px;
+}
+
+.socialMedia img{
+    height: 20px;
+}

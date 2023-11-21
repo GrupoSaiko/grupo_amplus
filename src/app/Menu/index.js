@@ -21,7 +21,7 @@ export default function Menu() {
         Servicios
       </Link>
 
-      <Link href={"/praxia"}>
+      <Link href={"/productos"}>
         Productos
       </Link>
 
