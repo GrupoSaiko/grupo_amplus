@@ -1,101 +1,106 @@
+.navItems {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navItems img {
+  width: 100px;
+}
+
+.navItems a {
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  border: 4px solid var(--color-surface-100);
+  border-style: none none solid none;
+}
+
+.navItems a:hover {
+  border-color: var(--blue);
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .nav {
+  height: 100%;
   display: flex;
   font-weight: bold;
-  position: sticky;
   height: 10vh;
-  top: 0;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 0;
   background: var(--color-surface-100);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-.nav > a:nth-of-type(n + 1) {
+.menuMobile {
+  width: 50px;
+  background: var(--color-surface-200);
+  border: none;
+  border-radius: 5px;
+  color: var(--color-surface-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: 50%;
+  display: none;
+}
+
+.menuMobile svg {
   color: var(--primaryColor);
-  min-width: 50px;
-  transition: all 0.35s ease;
-  height: 100%;
+  fill: var(--primaryColor);
+}
+
+.expandMenuMobile {
+  width: 100%;
+  height: 90svh;
+  margin: 10svh 0 0 0;
+  position: absolute;
+  background: var(--color-surface-100);
+  z-index: 50;
+  right: 0%;
+  transition: all 0.75s ease-in-out;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 0 15px;
+  flex-direction: column;
+  padding: 15px;
+  gap:1rem 0;
+  border: 3px solid var(--blue);
+  border-style: solid none none none;
+}
+
+.expandMenuMobile a {
+  padding: 10px 5px;
+  font-size: 2rem;
   text-decoration: none;
-  transition: all 0.25s ease;
+  /* border:2px solid var(--blue);
+  border-style:solid none none none; */
+  background: var(--color-surface-200);
 }
 
-.nav &:hover {
-  transition: background 0.3s ease; /* Agrega una transición al cambio de color de fondo */
-  background: rgb(245, 245, 245);
-}
-.nav &:hover&::after {
-  content: "";
-  position: absolute;
-  bottom: -1px; /* Ajusta la posición de la línea de subrayado */
-  left: 0;
-  width: 100%;
-  height: 2px; /* Ajusta el grosor de la línea de subrayado */
-  background-color: var(--blue); /* Cambia el color del subrayado */
-  display: block;
-}
-.nav > a:nth-of-type(1) {
-  padding: 0 20px;
-  display: flex;
-  width: 10vw;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  cursor: url("/link.png"), auto;
-  position: relative;
+.displayMenu {
+  right: 100%;
 }
 
-.nav img {
-  height: 100%;
-  width: -webkit-fill-available;
-  object-fit: contain;
-  cursor: url("/link.png"), auto;
-}
-
-.nav > a:nth-of-type(1) &:hover {
-  transition: background 0.3s ease; /* Agrega una transición al cambio de color de fondo */
-  background: rgb(245, 245, 245);
-}
-
-.nav > a:nth-of-type(1) &:hover &::after {
-  content: "";
-  position: absolute;
-  bottom: -1px; /* Ajusta la posición de la línea de subrayado */
-  left: 0;
-  width: 100%;
-  height: 2px; /* Ajusta el grosor de la línea de subrayado */
-  background-color: var(--blue); /* Cambia el color del subrayado */
-  display: block;
-}
-
-@media (prefers-color-scheme: dark) {
-  .nav > a:nth-of-type(n + 1) {
-    color: var(--primaryColor);
-  }
-
-  .nav > a:nth-of-type(n + 1) &:hover {
-    background: #303030;
-  }
-
-  .nav > a:nth-of-type(n + 1) &:hover &::after {
-    background-color: var(--blue); /* Cambia el color del subrayado */
-  }
-}
 @media screen and (max-width: 768px) {
-  .nav > a:nth-of-type(n+2){
+  .menuMobile {
+    display: flex;
+  }
+
+  .navItems > *:nth-child(n + 2) {
     display: none;
   }
+}
 
-  .nav > a {
-    width: auto !important;
-    padding: 0 5px !important;
+@keyframes toggleMenu {
+  0% {
+    right: 100%;
   }
 
-  .nav img{
-    width: 25vw;
-    padding: 0 10px;
+  100% {
+    right: 0%;
   }
 }
