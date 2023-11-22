@@ -4,4 +4,5 @@ export interface SocialMediaI {
   socialMedia: SocialMediaName;
   children:string;
   link:string;
+  withText?:boolean;
 }

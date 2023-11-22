@@ -11,11 +11,21 @@ import {
   FormContact,
 } from "../structure/FormContact";
 import Maps from "../molecules/Maps";
+import GrupoSaikoSocialMedia from "../molecules/GrupoSaikoSocialMedia";
 
 export default function Contacto() {
   return (
     <div className={ui.contact}>
-      <Maps src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.97843794795!2d-100.38876158969263!3d25.672009477314152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662960ac071e681%3A0xb8752e2134218d55!2sGrupo%20Saiko%2C%20S.A.%20De%20C.V.!5e0!3m2!1ses-419!2smx!4v1700351861909!5m2!1ses-419!2smx" />
+      <div>
+        <Maps
+          contact={<GrupoSaikoSocialMedia withText={false}/>}
+          address="Eje Metropolitano 30 3057, Cumbres del Valle, 64640 Monterrey, N.L."
+          phone="+52 81 8215 5100"
+          title="Grupo Saiko"
+          link="https://maps.app.goo.gl/yaNyJ4MrQm52p3XW6"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-100.38780659437182%2C25.670858704135025%2C-100.38439482450487%2C25.673060997317517&amp;layer=mapnik&amp;marker=25.67195985581232%2C-100.38610070943832"
+        />
+      </div>
 
       <div className={ui.formContact}>
         <p>

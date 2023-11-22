@@ -50,7 +50,7 @@ ul > li::before{
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 *:disabled,
@@ -106,6 +106,10 @@ footer {
 }
 
 .cursor {
+  cursor: url("/link.png"), auto;
+}
+
+.link{
   cursor: url("/link.png"), auto;
 }
 
@@ -171,7 +175,7 @@ p {
 
 @media screen and (max-width: 480px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -181,8 +185,14 @@ p {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1240px) {
   html {
     font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1241px) {
+  html {
+    font-size: 18px;
   }
 }

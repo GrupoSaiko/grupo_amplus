@@ -1,16 +1,19 @@
 import SocialMedia from "@/app/atoms/SocialMedia";
 import React from "react";
 
-export default function GrupoSaikoSocialMedia() {
+export default function GrupoSaikoSocialMedia({ withText = true }) {
   return (
-    <div style={{
+    <div
+      style={{
         display: "flex",
-        gap:"0 7.55px",
-        justifyContent:"center"
-    }}>
+        gap: "0 7.55px",
+        justifyContent: "center",
+      }}
+    >
       <SocialMedia
         socialMedia="instagram"
         link="https://www.instagram.com/grupo_saiko/"
+        withText={withText}
       >
         grupo_saiko
       </SocialMedia>
@@ -18,17 +21,23 @@ export default function GrupoSaikoSocialMedia() {
       <SocialMedia
         socialMedia="facebook"
         link="https://www.facebook.com/GrupoSaiko"
+        withText={withText}
       >
         Saiko
       </SocialMedia>
 
-      <SocialMedia socialMedia="twitter" link="https://twitter.com/GrupoSaiko">
+      <SocialMedia
+        socialMedia="twitter"
+        link="https://twitter.com/GrupoSaiko"
+        withText={withText}
+      >
         @GrupoSaiko
       </SocialMedia>
 
       <SocialMedia
         socialMedia="linkedin"
         link="https://www.linkedin.com/company/grupo-saiko-s-a-de-c-v-/"
+        withText={withText}
       >
         Grupo Saiko
       </SocialMedia>
