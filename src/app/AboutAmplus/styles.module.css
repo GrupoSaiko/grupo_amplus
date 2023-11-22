@@ -21,7 +21,7 @@
 
 .us > p {
   grid-column: 2/10;
-  grid-row: 8/11;
+  grid-row: 9/11;
   z-index: 1;
   padding: 20px;
   box-sizing: content-box;
@@ -40,7 +40,7 @@
 
 .us a,
 .us h1 {
-  padding: 10px;
+  padding: 1rem;
 }
 
 .us h1 {

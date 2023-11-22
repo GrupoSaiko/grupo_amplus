@@ -1,90 +1,11 @@
-.servicios {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
-  display: flex;
-  gap: 0 1rem;
-  padding: 0 0 0.5rem 0;
-  margin: 0 0 0.5rem 0;
-  align-items: center;
-  border: 0.15rem solid var(--primaryColor);
-  border-style: none none solid none;
-}
-.title svg,
-.title img {
-  height: 30px;
-}
-
-.article {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  ;
-}
-.article .section {
-  width: 25%;
-}
-
-/* Estilo base de las tarjetas */
-.section {
-  /* From https://css.glass */
-  /* background: rgba(255, 255, 255, 0.14);
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px); */
-  border-radius: 8px;
-  margin: 20px;
-  padding: 20px;
-  /* transition: transform 0.3s ease-in-out; */
-}
-
-/* Estilo del título de la tarjeta */
-.section h2 {
-  color: var(--primaryColor);
-  font-size: 1.15rem;
-  margin-bottom: 10px;
-}
-
-/* Estilo del texto de la tarjeta */
-.section p {
-  color: var(--primaryColor);
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
-
-/* Estilo del botón de la tarjeta */
-.section a.button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 15px;
-  background-color: #4caf50;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-/* Efecto de cambio de color al pasar el ratón sobre el botón */
-.section a.button:hover {
-  background-color: #45a049;
-}
-
-/* -------------------------------- */
-
-.servicio img{
+.servicio img {
   width: 100%;
   object-fit: cover;
   height: 100%;
   object-position: center;
 }
 
-.servicio{
+.servicio {
   height: 100%;
   display: grid;
   grid-template-columns: 100%;
@@ -95,23 +16,36 @@
   box-shadow: rgba(0, 0, 0, 1) 0px 10px 50px;
 }
 
-.servicioContenido{
+.servicioContenido {
   padding: 15px;
   transform: skew(20deg);
   margin: 0;
 }
 
-.container{
+.container {
   width: 100%;
   height: 75%;
   padding: 30px 5% 30px 15%;
-  grid-template-columns: repeat(5,19%);
+  grid-template-columns: repeat(5, 19%);
   justify-content: space-between;
   display: grid;
 }
 
-.containerCards{
+.containerCards {
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+    grid-auto-flow: dense;
+    padding: 15px;
+    overflow: auto;
+    justify-content: space-between;
+    gap: 1.5rem ;
+    height: 100%;
+  }
 }

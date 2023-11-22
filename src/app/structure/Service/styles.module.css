@@ -26,8 +26,20 @@
 }
 
 .servicioContenido h2 {
-    margin:0 0 10px 0;
-    padding:0 0 10px 0;
-    border:3px solid var(--color-primary-100);
-    border-style: none none solid none;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  border: 3px solid var(--color-primary-100);
+  border-style: none none solid none;
+}
+
+@media screen and (max-width: 768px) {
+  .servicio {
+    transform: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servicio img{
+    height: 150px;
+  }
 }
