@@ -1,9 +1,6 @@
-"use client";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import ui from "./styles.module.css";
 import Spinner from "@/app/atoms/Spinner";
-import * as l from "leaflet";
-import { v4 as uuidv4 } from "uuid";
 
 /**
  * Render the google maps iframe
