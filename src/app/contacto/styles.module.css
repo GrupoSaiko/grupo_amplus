@@ -57,7 +57,7 @@
     padding: 15px;
   }
 
-  .contact > *:nth-child(1) {
+  .contact > *:nth-child(2) {
     height: 500px;
   }
 }
