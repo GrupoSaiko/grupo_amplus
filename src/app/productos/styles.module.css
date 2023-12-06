@@ -63,6 +63,10 @@
   display: none;
 }
 
+.praxiaVideo video{
+  width: 100%;
+}
+
 .praxiaVideo {
   height: 100%;
   display: flex;
@@ -104,6 +108,11 @@
   .contentFlyer1 {
     grid-template-columns: 90%;
     gap:1rem 0;
+  }
+
+  .praxiaVideo{
+    grid-column: 1/11;
+    width: 100%;
   }
 
   .contentFlyer1 >*:last-child{
