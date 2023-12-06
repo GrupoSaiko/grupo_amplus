@@ -21,8 +21,8 @@ export default function Productos() {
           </div>
 
           <div className={ui.title}>
-            <p>Sistema de administración</p>
-            <p>No trabajes para el sistema, Praxia trabaja para ti</p>
+            <h1>Sistema de administración</h1>
+            <h2>No trabajes para el sistema, Praxia trabaja para ti</h2>
           </div>
         </div>
 

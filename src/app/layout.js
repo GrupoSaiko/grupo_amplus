@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <Menu />
         <div className="main">
         <video autoPlay loop muted>
-          <source src="/bg.mov" type="video/mp4"/>
+          <source src="/inicio.mp4" type="video/mp4"/>
         </video>
         <main>{children}</main>
 

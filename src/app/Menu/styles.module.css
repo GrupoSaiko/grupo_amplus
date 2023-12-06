@@ -4,8 +4,13 @@
   height: 100%;
 }
 
-.navItems img {
-  width: 100px;
+.logo{
+  padding: 10px !important;
+  max-width: 220px !important;
+}
+
+.logo img{
+  width: 100%;
 }
 
 .navItems a {

@@ -27,7 +27,7 @@ export default function Menu() {
     <ContextMenu.Provider value={{ closeMenu }}>
       <nav className={ui.nav}>
         <div className={ui.navItems}>
-          <Link onClick={closeMenu} href="/">
+          <Link className={ui.logo} onClick={closeMenu} href="/">
             <img src="/amplus_logo.svg" alt="logo_de_amplus" />
           </Link>
           <OptionsNavigation />
