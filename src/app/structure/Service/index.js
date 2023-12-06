@@ -11,7 +11,7 @@ export default function Service({ content, imgSrc, title }) {
     <section className={ui.servicio}>
       <img src={imgSrc} alt="jpeg" />
       <div className={ui.servicioContenido}>
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <p>{content}</p>
       </div>
     </section>

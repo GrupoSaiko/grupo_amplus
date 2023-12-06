@@ -98,6 +98,10 @@
   .navItems > *:nth-child(n + 2) {
     display: none;
   }
+
+  .logo img{
+    width: 25svw;
+  }
 }
 
 @keyframes toggleMenu {
