@@ -1,9 +1,0 @@
-.searchCustomer{
-    display: flex;
-    gap:0 10px;
-    align-items: flex-end;
-}
-
-.searchCustomer > button{
-    height: 100%;
-}
