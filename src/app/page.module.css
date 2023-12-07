@@ -1,15 +1,27 @@
 .amplus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
 }
 
-.amplus button{
+.amplus button {
   width: 100%;
 }
 
-.amplus h1 , .amplus h2 {
+.slideA {
+  grid-column: 1/6;
+  grid-row: 8/11;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  
+  animation:slide-out-left .65s cubic-bezier(.755,.05,.855,.06) both;
+  animation-delay: 12s;
+}
+
+
+.amplus h1,
+.amplus h2 {
   text-align: center;
 }
 .amplus h2 {
@@ -48,8 +60,8 @@
 .slide1 {
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100%;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
 }
 
 .subtitle {
@@ -60,7 +72,7 @@
   border: 0.15rem solid var(--primaryColor);
   border-style: none none solid none;
   margin: 0 0 1rem 0;
-} /*# sourceMappingURL=index.css.map */
+}
 
 @media screen and (max-width: 480px) {
   .amplus > section {
@@ -72,3 +84,48 @@
     width: 70%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .slideA {
+    grid-column: 1/11;
+  }
+}
+
+.inicio {
+  grid-column: 1/11;
+  grid-row: 1/11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide-in-fwd-center 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.inicio p {
+  font-size: 12.5svw;
+}
+
+@keyframes changeColor {
+  0%,
+  33.33% {
+    color: #f0e1ee;
+  }
+
+  66.66% {
+    color: #7e4058;
+  }
+  100% {
+    color: #f0e1ee;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out-left{0%{transform:translateX(0);opacity:1}100%{transform:translateX(-1000px);opacity:0}}
