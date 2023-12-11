@@ -5,12 +5,12 @@
 }
 
 .logo{
-  padding: 10px !important;
   max-width: 220px !important;
 }
 
 .logo img{
   width: 100%;
+  max-height: 65%;
 }
 
 .navItems a {

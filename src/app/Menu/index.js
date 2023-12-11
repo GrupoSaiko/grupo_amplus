@@ -28,7 +28,7 @@ export default function Menu() {
       <nav className={ui.nav}>
         <div className={ui.navItems}>
           <Link className={ui.logo} onClick={closeMenu} href="/">
-            <img src="/amplus_logo.svg" alt="logo_de_amplus" />
+            <img className="cursor" src="/amplus_logo.svg" alt="logo_de_amplus" />
           </Link>
           <OptionsNavigation />
         </div>

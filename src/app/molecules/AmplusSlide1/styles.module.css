@@ -2,15 +2,19 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  white-space: normal; /* or break-spaces */
+  overflow: hidden; /* Hide overflowing content */
   gap: 10px 0;
   width: 100%;
   animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 6s;
 }
 
 .talentoContainer * {
   font-weight: normal;
+  color:white !important;
 }
+
+
 
 .talento {
   height: 75%;
@@ -30,6 +34,10 @@
 .subTalento {
   display: flex;
   align-items: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis;
+
 }
 
 .subTalento {

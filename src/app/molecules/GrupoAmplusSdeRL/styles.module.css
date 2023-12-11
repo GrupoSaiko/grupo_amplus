@@ -1,0 +1,72 @@
+.container {
+  position: relative;
+  display: flex;
+  font-size: 2rem;
+  background: #2f2f2f;
+  padding: 10px;
+  align-items: center;
+  animation: grow 4s ease-in-out alternate;
+  white-space: normal; /* or break-spaces */
+  overflow: hidden; /* Hide overflowing content */
+  height: 100%;
+  width: 100%;
+}
+
+.upperContainer {
+  animation: grow 4s ease-in-out alternate;
+  background: #2f2f2f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 18;
+}
+
+.subContainer,
+.upperContainer,
+.interSubContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.subContainer {
+  background: #2a8fc6;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  animation: grow 4s ease alternate;
+}
+
+.container p {
+  color: transparent;
+  font-size: 2rem;
+}
+
+.container span {
+  z-index: 20;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis;
+
+  color: white;
+}
+
+.interSubContainer {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  animation: grow 4s linear alternate;
+  background: white;
+  z-index: 10;
+}
+
+@keyframes grow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
