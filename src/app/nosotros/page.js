@@ -1,21 +1,10 @@
 import React from "react";
-import About from "../About";
 import ui from "./styles.module.css";
 import AboutAmplus from "../AboutAmplus";
 
 export default function Nosotros() {
 
-  // return <div className={ui.aboutUs}>
-  //   <video className={ui.video} autoPlay loop muted>
-  //     <source src="/Visión.mp4" type="video/mp4"/>
-  //   </video>
-
-  //   <video className={ui.video} autoPlay loop muted>
-  //     <source src="/Misión.mp4" type="video/mp4"/>
-  //   </video>
-  // </div>
-
-  
+ 
   return (
     <div className={ui.aboutUs}>
       <AboutAmplus
@@ -26,6 +15,8 @@ export default function Nosotros() {
             ofrecemos la mejor calidad de servicio a nuestros clientes."
         imageSource="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg"
         id="nosotros"
+        video="/Misión 03.mp4"
+
       />
 
       <AboutAmplus
@@ -38,6 +29,7 @@ export default function Nosotros() {
               esta alienada a nuestra Misión y Visión."
         imageSource="https://cdn.pixabay.com/photo/2015/01/09/11/11/office-594132_1280.jpg"
         id="historia"
+        video="/Visión 03.mp4"
       />
 
       <AboutAmplus
@@ -50,6 +42,7 @@ export default function Nosotros() {
               cliente."
         imageSource="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849824_1280.jpg"
         id="vision"
+        video="/Historia 03.1.mp4"
       />
     </div>
   );

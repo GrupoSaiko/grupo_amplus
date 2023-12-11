@@ -15,55 +15,57 @@ export default function AboutAmplus({
   hrefs = [],
   backward = "#",
   forward = "#",
+  video
 }) {
   return (
     <section className={ui.us} id={id}>
-      <div>
+      <div></div>
+      {/* <div>
         <h1>{title}</h1>
-        {/* {hrefs.map((item, i) => <Link key={`${item.title}_${item.link}_${i}`} href={item.link}>{item.title}</Link>)} */}
-      </div>
+      </div> */}
 
-      <div className={ui.navigation}>
-        <Link className={backward === "#" ? 'disabled' : null} href={backward}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M4.5 15.75l7.5-7.5 7.5 7.5"
-          />
-        </svg>
+      {/* <div className={ui.navigation}>
+        <Link className={backward === "#" ? "disabled" : null} href={backward}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4.5 15.75l7.5-7.5 7.5 7.5"
+            />
+          </svg>
         </Link>
 
-        <Link className={forward==="#" ? 'disabled' : null} href={forward}>
-        
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
+        <Link className={forward === "#" ? "disabled" : null} href={forward}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
         </Link>
+      </div> */}
 
-      </div>
+      {/* <img src={imageSource} alt={title} /> */}
+      <video autoPlay loop muted>
+        <source src={video}/>
+      </video>
 
-      <img src={imageSource} alt={title} />
-
-      <p>{content}</p>
+      {/* <p>{content}</p> */}
     </section>
   );
 }

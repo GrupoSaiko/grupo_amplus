@@ -16,4 +16,8 @@ export interface PropsAboutAmplus {
   hrefs?: LinkAbout[];
   forward?:string;
   backward?:string;
+  /**
+   * Link of the video
+   */
+  video:string;
 }
