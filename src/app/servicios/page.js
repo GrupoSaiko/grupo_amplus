@@ -3,6 +3,20 @@ import ui from "./styles.module.css";
 import Service from "../structure/Service";
 
 export default function Servicios() {
+
+  return <div style={{
+    width:"100%",
+    height:"100%"
+  }}>
+          <video style={{
+            objectFit:"cover",
+            width:"100%",
+    height:"100%"
+          }} autoPlay loop muted>
+        <source src='/Servicios 4.0.mp4' type="video/mp4"/>
+      </video>
+  </div>
+
   return (
     <div className={ui.containerCards}>
       <div className={ui.container}>

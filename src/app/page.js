@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <video autoPlay loop muted>
-        <source src="/Inicio 3.1.mp4" type="video/mp4" />
+        <source src="/Inicio 4.0.mp4" type="video/mp4" />
       </video>
       <div className={ui.slide1}></div>
     </>

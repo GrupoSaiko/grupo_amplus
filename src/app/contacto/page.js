@@ -39,7 +39,7 @@ export default function Contacto() {
       <div>
         <Maps
           contact={<GrupoSaikoSocialMedia withText={false} />}
-          address="Eje Metropolitano 30 3057, Cumbres del Valle, 64640 Monterrey, N.L."
+          address="Blvd Gustavo Díaz Ordaz 3057, Santa María, 64650 Monterrey, N.L."
           phone="+52 81 8215 5100"
           title="Grupo amplus"
           link="https://maps.app.goo.gl/nugDPe1aL3KcACwM9"

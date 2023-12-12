@@ -15,7 +15,7 @@ export default function Nosotros() {
             ofrecemos la mejor calidad de servicio a nuestros clientes."
         imageSource="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg"
         id="nosotros"
-        video="/Misión 03.mp4"
+        video="/Misión 4.0.mp4"
 
       />
 
@@ -29,7 +29,7 @@ export default function Nosotros() {
               esta alienada a nuestra Misión y Visión."
         imageSource="https://cdn.pixabay.com/photo/2015/01/09/11/11/office-594132_1280.jpg"
         id="historia"
-        video="/Visión 03.mp4"
+        video="/Visión 4.0.mp4"
       />
 
       <AboutAmplus
@@ -42,7 +42,7 @@ export default function Nosotros() {
               cliente."
         imageSource="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849824_1280.jpg"
         id="vision"
-        video="/Historia 03.1.mp4"
+        video="/Historia 4.0.mp4"
       />
     </div>
   );

@@ -4,6 +4,21 @@ import SocialMedia from "../atoms/SocialMedia";
 import GrupoSaikoSocialMedia from "../molecules/GrupoSaikoSocialMedia";
 
 export default function Productos() {
+
+  return <div style={{
+    width:"100%",
+    height:"100%"
+  }}>
+          <video style={{
+            objectFit:"cover",
+            width:"100%",
+    height:"100%"
+          }} autoPlay loop muted>
+        <source src='/Productos 4.0.mp4' type="video/mp4"/>
+      </video>
+  </div>
+
+
   return (
     <div className={ui.container}>
       <div className={ui.flyer1}>
