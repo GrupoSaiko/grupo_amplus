@@ -85,7 +85,6 @@
 
 .footerMap a:hover{
   font-weight: bold;
-  background: var(--color-surface-200);
   color:var(--color-primary-100);
   
 }
@@ -111,6 +110,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+}
+
+.footerMap * {
+  font-size: var(--lengthMd1) !important;
 }
 
 @media screen and (max-width: 481px){

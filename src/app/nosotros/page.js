@@ -42,7 +42,7 @@ export default function Nosotros() {
               cliente."
         imageSource="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849824_1280.jpg"
         id="vision"
-        video="/Historia 4.0.mp4"
+        video="/Historia 4.1.mp4"
       />
     </div>
   );

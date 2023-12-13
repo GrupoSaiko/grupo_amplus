@@ -6,7 +6,7 @@
   font-family: inherit;
   border: 3px solid var(--secondaryColor);
   border-style: none none solid none;
-  font-size: 1rem;
+  font-size: var(--lengthMd2);
 }
 
 .input:focus-visible,

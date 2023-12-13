@@ -165,11 +165,15 @@ section,
 button,
 a,
 header,
-footer,
+
 h3,
 li,
 h4 {
   font-size: var(--lengthMd2);
+}
+
+footer{
+  font-size: var(--lengthMd1);
 }
 
 h1 {
