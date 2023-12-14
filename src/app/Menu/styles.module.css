@@ -10,7 +10,8 @@
 
 .logo img{
   width: 100%;
-  max-height: 65%;
+  /* max-height: 65%; */
+  height: 100%;
 }
 
 .navItems a {
@@ -33,13 +34,17 @@
   height: 100%;
   display: flex;
   font-weight: bold;
-  height: 10vh;
+  height: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 0 10px 0 0;
   background: var(--color-surface-100);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
+
+/* .nav *{
+  font-size: var(--lengthSm3) !important;
+} */
 
 .menuMobile {
   width: 50px;
