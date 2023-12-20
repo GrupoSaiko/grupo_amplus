@@ -1,9 +1,8 @@
 "use client"
 import { useForm } from "react-hook-form";
 import { validateContact } from "./validations";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import { attemptSendEmail } from "@/app/helpers/contact/api";
-import { ClientJS } from 'clientjs';
 
 /**
  * @type {import("@/app/structure/FormContact/types").StateFormContact}
@@ -51,17 +50,6 @@ const useYupValidationResolver = (validationSchema) =>
  */
 export default function useContact() {
   const [state, setState] = useState(INITIAL_STATE);
-
-  useEffect(()=>{
-    const client = new ClientJS();
-
-    setState(current=>({
-      ...current,
-      browser:client.getBrowser(),
-      os:client.getOS()
-    }))
-
-  },[]);
 
   const resolver = useYupValidationResolver(validateContact);
 
@@ -130,5 +118,11 @@ export default function useContact() {
     }
   }
 
-  return { form, ...state, sendEmail };
+  const setBrowserInfo = (os,browser) => setState(current=>({
+    ...current,
+    browser,
+    os
+  }));
+
+  return { form, ...state, sendEmail , setBrowserInfo };
 }

@@ -17,4 +17,5 @@ export interface ContactFormBody extends ContactFormI{
 export interface ReturnUseContact extends StateFormContact {
   form: UseFormReturn<ContactFormI>;
   sendEmail: (formValues: ContactFormI) => Promise<void>;
+  setBrowserInfo:(os:string,browser:string)=>void;
 }

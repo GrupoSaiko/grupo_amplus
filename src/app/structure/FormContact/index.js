@@ -5,13 +5,14 @@ import Label from "@/app/atoms/Label";
 import NativeTextArea from "@/app/atoms/NativeTextArea";
 import Input from "@/app/atoms/Text";
 import useContact from "@/app/customHooks/useContact";
-import React, { createContext, useContext, useRef } from "react";
+import React, { createContext, useContext, useEffect, useRef } from "react";
 import { Controller } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import Error from "@/app/atoms/Error";
 import Button from "@/app/atoms/Button";
 import Spinner from "@/app/atoms/Spinner";
 import { v4 as uuidv4 } from "uuid";
+import { ClientJS } from 'clientjs';
 
 /**
  * @type {import("react").Context<import("./types").ContextFormContact|undefined>}
@@ -20,7 +21,12 @@ const ContextContainer = createContext(undefined);
 
 export function FormContactContainer({ children = <></> }) {
   const form = useContact();
+  useEffect(()=>{
+    const client = new ClientJS();
 
+   form.setBrowserInfo(client.getOS(),client.getBrowser());
+
+  },[]);
   return (
     <ContextContainer.Provider value={{ ...form, idForm: uuidv4() }}>
       {children}
