@@ -6,9 +6,8 @@ import Divider from "../atoms/Divider";
 export default function Footer() {
   return (
     <>
-
       <footer className={ui.footer}>
-      <Divider />
+        <Divider />
         <Contacto />
 
         <p>© 2023 Grupo Amplus, Todos los Derechos Reservados.</p>

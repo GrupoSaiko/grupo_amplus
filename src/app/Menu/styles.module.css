@@ -68,9 +68,10 @@
 
 .expandMenuMobile {
   width: 100%;
-  height: 90svh;
-  margin: 10svh 0 0 0;
-  position: absolute;
+  margin:8svh 0 0 0;
+  height: 92svh;
+  position: fixed;
+  top: 0;
   background: var(--color-surface-100);
   z-index: 50;
   right: 0%;

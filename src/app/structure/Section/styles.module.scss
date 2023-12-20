@@ -11,7 +11,7 @@
   }
 
   > article {
-    margin:0 15% 100px 15%;
+    margin: 0 15% 100px 15%;
   }
 
   // background: linear-gradient(
@@ -22,7 +22,6 @@
   //   ),
   //   url("https://newxel.com/wp-content/uploads/2022/05/extended-development-team.jpeg");
 
-    
   // background-size: cover;
   // background-position: center;
 }
@@ -35,10 +34,10 @@
   padding: 70px 0 0 0;
 }
 
-.decorationTitle{
+.decorationTitle {
   width: 100px;
   object-fit: fill !important;
-  margin:0 15% 50px 15%;
+  margin: 0 15% 50px 15%;
 }
 
 .divider {
@@ -46,4 +45,20 @@
   margin: 0 !important;
   object-fit: fill;
   height: auto !important;
+}
+
+/* Media query for dark mode */
+@media (prefers-color-scheme: light) {
+  .section {
+    background: linear-gradient(
+        to left,
+        rgb(255 255 255 / 80%),
+        rgb(255 255 255 / 95%) 1%,
+        var(--color-surface-200, 0.15)
+      ),
+      url(https://newxel.com/wp-content/uploads/2022/05/extended-development-team.jpeg) !important;
+
+    background-size: cover !important;
+    background-position: center;
+  }
 }

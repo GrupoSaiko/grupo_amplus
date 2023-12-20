@@ -1,10 +1,15 @@
 import React from "react";
 import ui from "./styles.module.scss";
 
-export default function Title({ children = "" }) {
+/**
+ * 
+ * @param {JSX.IntrinsicElements.h1: React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>} props 
+ * @returns 
+ */
+export default function Title(props) {
   return (
     <div className={ui.title}>
-      <h1>{children}</h1>
+      <h1 {...props}></h1>
       <img src="lines.svg" alt="decoracion_titulo" />
     </div>
   );

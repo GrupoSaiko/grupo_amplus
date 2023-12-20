@@ -17,9 +17,9 @@ import Title from "../atoms/Title";
 export default function Contacto() {
   return (
     <>
-    <Title>Contacto</Title>
+    <Title id="contacto">Contacto</Title>
 
-    <div className={ui.contact} id="contacto">
+    <div className={ui.contact} >
       <div className={ui.formContact}>
         <p>
           Queremos ser parte de

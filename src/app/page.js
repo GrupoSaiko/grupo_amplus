@@ -11,9 +11,9 @@ export default function Home() {
     <>
       <div className={ui.slide1}>
         <video autoPlay muted loop>
-          <source src="/inicio.mp4" type="video/mp4" />
+          <source src="/Inicio 6.0.mp4" type="video/mp4" />
         </video>
-        <HomeAnimation
+        {/* <HomeAnimation
           child1={
             <section className={ui.inicio}>
               <SlideText
@@ -32,7 +32,7 @@ export default function Home() {
               <GrupoAmplusSdeRL />
             </div>
           }
-        />
+        /> */}
       </div>
 
       <Section
