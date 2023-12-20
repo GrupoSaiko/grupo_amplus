@@ -1,6 +1,6 @@
 .label {
   font-weight: bold;
-  font-size:var(--lengthMd2);
+  font-size:var(--lengthMd1);
 }
 
 .requiredLabel:after {

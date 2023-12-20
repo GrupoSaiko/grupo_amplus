@@ -6,6 +6,7 @@ const list = {
   facebook: "/facebook.png",
   twitter: "/twitter.png",
   linkedin: "/linkedin.png",
+  youtube:"/youtube.png"
 };
 
 /**

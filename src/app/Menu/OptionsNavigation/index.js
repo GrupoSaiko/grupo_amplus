@@ -11,13 +11,13 @@ const hook = useContext(ContextMenu);
     <>
       <Link onClick={hook.closeMenu} href="/">Inicio</Link>
 
-      <Link onClick={hook.closeMenu} href="/nosotros">Nosotros</Link>
+      <Link onClick={hook.closeMenu} href="/#nosotros">Nosotros</Link>
 
-      <Link onClick={hook.closeMenu} href={"/servicios"}>Servicios</Link>
+      <Link onClick={hook.closeMenu} href={"/#servicios"}>Servicios</Link>
 
-      <Link onClick={hook.closeMenu} href={"/productos"}>Productos</Link>
+      <Link onClick={hook.closeMenu} href={"/#productos"}>Productos</Link>
 
-      <Link onClick={hook.closeMenu} href="/contacto">Contacto</Link>
+      <Link onClick={hook.closeMenu} href="/#contacto">Contacto</Link>
     </>
   );
 }

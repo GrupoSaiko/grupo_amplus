@@ -1,0 +1,43 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  > img {
+    object-fit: cover;
+    height: 30px;
+    // margin: 0 0 40px 0;
+  }
+
+  > * {
+    margin: 0 15%;
+  }
+
+  > article {
+    margin:0 15% 100px 15%;
+  }
+
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.95) 1%,
+      var(--color-surface-200, 0.15)
+    ),
+    url("https://newxel.com/wp-content/uploads/2022/05/extended-development-team.jpeg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.topDivider {
+  padding: 0 0 70px 0;
+}
+
+.lastDivider {
+  padding: 70px 0 0 0;
+}
+
+.divider {
+  width: 100%;
+  margin: 0 !important;
+  object-fit: fill;
+  height: auto !important;
+}

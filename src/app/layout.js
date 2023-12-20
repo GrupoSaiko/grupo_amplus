@@ -18,12 +18,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Menu />
         <div className="main">
-          {/* <video autoPlay loop muted>
-            <source src="/Inicio 3.1.mp4" type="video/mp4" />
-          </video> */}
           <main>{children}</main>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

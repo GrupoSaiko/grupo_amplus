@@ -1,7 +1,8 @@
 .error {
   color: white;
+  width: 100%;
   font-weight: bold !important;
-  background: rgb(255, 22, 22);
+  background: rgb(255, 55, 55);
   padding:0.25rem 1rem;
   display: flex;
   align-items: center;

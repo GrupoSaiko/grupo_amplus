@@ -58,10 +58,20 @@
 }
 
 .slide1 {
-  height: 100%;
+  height: 92svh;
   display: grid;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
+}
+
+.slide1 video{
+  filter: brightness(0.75);
+  grid-column: 1/11;
+  grid-row:1/11;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .subtitle {

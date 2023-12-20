@@ -1,12 +1,12 @@
 .input {
-  padding: 0.75rem;
+  padding: 0.5rem;
   width: 100%;
   background: var(--color-surface-100);
   border: none;
   font-family: inherit;
   border: 3px solid var(--secondaryColor);
   border-style: none none solid none;
-  font-size: var(--lengthMd2);
+  font-size: var(--lengthMd1);
 }
 
 .input:focus-visible,

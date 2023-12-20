@@ -27,6 +27,14 @@ export default function GrupoSaikoSocialMedia({ withText = true }) {
       </SocialMedia>
 
       <SocialMedia
+        socialMedia="youtube"
+        link="https://www.youtube.com/@praxia.amplus"
+        withText={withText}
+      >
+        @praxia.amplus
+      </SocialMedia>
+
+      <SocialMedia
         socialMedia="twitter"
         link="https://twitter.com/GrupoSaiko"
         withText={withText}

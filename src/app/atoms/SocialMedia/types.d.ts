@@ -1,4 +1,4 @@
-type SocialMediaName = "instagram" | "facebook" | "twitter" | "linkedin"
+type SocialMediaName = "instagram" | "facebook" | "twitter" | "linkedin" | "youtube"
 
 export interface SocialMediaI {
   socialMedia: SocialMediaName;

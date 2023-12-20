@@ -1,0 +1,99 @@
+.section {
+  display: flex;
+  margin: 0 15%;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.title img {
+  height: 15px;
+  object-fit: fill;
+}
+
+.title {
+  display: inline-flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.95) 1%,
+      var(--color-surface-200, 0.15)
+    ),
+    url("https://elkit.wirastudio.co/cetech/wp-content/uploads/sites/24/2023/04/software-developer-working-in-office.jpg");
+
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  color: #fff; /* Set text color to contrast with the background */
+}
+
+
+
+.container .section {
+  grid-column: 1/11;
+}
+
+.section > *:nth-child(1) {
+  width: 100%;
+}
+
+.section img {
+  object-fit: cover;
+}
+
+.overviewService {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+  position: relative;
+}
+
+.overviewService img {
+  grid-column: 1/11;
+  grid-row: 1/11;
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+  z-index: 1;
+  object-position: top;
+  filter: grayscale(0.75);
+  
+}
+
+.overviewService p {
+  z-index: 2;
+  grid-column: 1/11;
+  grid-row: 1/11;
+  display: flex;
+  align-items: flex-end;
+}
+
+.overviewService span {
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 10px 20px;
+}
+
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+}
+
+.article {
+  margin: 20px 0 0 0;
+  display: grid;
+  grid-template-columns: 55% 40%;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.activeService {
+  border-color: var(--blue);
+  background: rgb(128, 128, 128, 0.1);
+}
