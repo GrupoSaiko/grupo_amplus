@@ -6,4 +6,6 @@ export interface PropsSection {
   topDivider?:Divider;
   bottomDivider?:Divider;
   id?:string;
+  bgUrl?:string;
+  bgDirection?:'left'|'right';
 }

@@ -18,10 +18,22 @@ export default function Section({
   title,
   bottomDivider = "none",
   topDivider = "none",
-  id = null
+  id = null,
+  bgUrl = 'https://newxel.com/wp-content/uploads/2022/05/extended-development-team.jpeg',
+  bgDirection = 'right'
 }) {
   return (
-    <section className={ui.section} id={typeof(id)==='string' ? id : ''}>
+    <section className={ui.section} id={typeof(id)==='string' ? id : ''} style={{
+      background:`linear-gradient(
+        to ${bgDirection},
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.95) 1%,
+        var(--color-surface-200, 0.15)
+      ),
+      url("${bgUrl}");`,
+      backgroundSize:'cover',
+      backgroundPosition:'center'
+    }}>
       {topDivider !== "none" ? (
         <img src={divider[topDivider]} alt="divisor_seccion_top" className={`${ui.divider} ${ui.topDivider}`}/>
       ) : <div className={ui.topDivider}></div>}

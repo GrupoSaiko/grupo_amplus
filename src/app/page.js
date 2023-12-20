@@ -38,7 +38,7 @@ export default function Home() {
         />
       </div>
 
-      <Section id='nosotros' title="Nosotros" bottomDivider="top">
+      <Section bgDirection='left' id="nosotros" title="Nosotros" bottomDivider="top">
         <ItemArticle title="Misión" img="/imagen1.png">
           <p>
             Nuestra misión es ayudar a nuestros clientes a alcanzar sus
@@ -80,7 +80,13 @@ export default function Home() {
         </ItemArticle>
       </Section>
 
-      <Section id='servicios' title="Servicios" bottomDivider="topInverted" topDivider="bottom">
+      <Section
+        bgUrl="/nosotros.jpeg"
+        id="servicios"
+        title="Servicios"
+        bottomDivider="topInverted"
+        topDivider="bottom"
+      >
         <ItemArticle title="Servicios administrados" img="/imagen4.png">
           <p>
             Los servicios administrados de infraestructura de TI son la solución
@@ -103,12 +109,14 @@ export default function Home() {
             TI.
           </p>
           <br />
-          <p>Nuestro equipo de expertos está dedicado a proporcionar
-            soluciones rápidas y eficientes para mantener tus operaciones de TI
-            funcionando sin problemas. Con un enfoque proactivo, nos anticipamos
-            a los problemas antes de que ocurran, garantizando la continuidad y
-            la eficiencia de tus sistemas. ¡Permítenos ser tu aliado confiable
-            en la gestión de TI!</p>
+          <p>
+            Nuestro equipo de expertos está dedicado a proporcionar soluciones
+            rápidas y eficientes para mantener tus operaciones de TI funcionando
+            sin problemas. Con un enfoque proactivo, nos anticipamos a los
+            problemas antes de que ocurran, garantizando la continuidad y la
+            eficiencia de tus sistemas. ¡Permítenos ser tu aliado confiable en
+            la gestión de TI!
+          </p>
         </ItemArticle>
 
         <ItemArticle title="Ejecución de proyectos" img="/imagen6.png">
@@ -142,24 +150,47 @@ export default function Home() {
           <p>
             El desarrollo de software es el proceso de crear, diseñar, probar y
             mantener programas informáticos que resuelven problemas o satisfacen
-            necesidades específicas. 
+            necesidades específicas.
           </p>
           <br />
-          <p>Los servicios de desarrollo de software que
-            te ofrecemos son de alta calidad, eficientes y asequibles. Contamos
-            con un equipo de desarrolladores experimentados y capacitados en las
-            mejores prácticas y metodologías del sector. Podemos desarrollar
-            software a medida para cualquier tipo de proyecto, ya sea una
-            aplicación móvil, un sistema web, un software de gestión, un
-            software educativo, etc. Nos adaptamos a tus requerimientos y
-            expectativas, y te entregamos un producto final que supere tus
-            estándares de calidad.</p>
+          <p>
+            Los servicios de desarrollo de software que te ofrecemos son de alta
+            calidad, eficientes y asequibles. Contamos con un equipo de
+            desarrolladores experimentados y capacitados en las mejores
+            prácticas y metodologías del sector. Podemos desarrollar software a
+            medida para cualquier tipo de proyecto, ya sea una aplicación móvil,
+            un sistema web, un software de gestión, un software educativo, etc.
+            Nos adaptamos a tus requerimientos y expectativas, y te entregamos
+            un producto final que supere tus estándares de calidad.
+          </p>
         </ItemArticle>
       </Section>
 
-      {/* <Nosotros /> */}
-      {/* <Servicios />
-      <Productos/> */}
+      <Section
+        id="productos"
+        title="Productos"
+        bottomDivider="top"
+        topDivider="bottomInverted"
+        bgUrl="/historia.jpeg"
+        bgDirection='left'
+      >
+        <ItemArticle
+          title="Praxia"
+          iframe="https://www.youtube-nocookie.com/embed/LV_5G9tje6I?si=zdZ-YXytYUWMRGDC"
+        >
+          <ul>
+            <li>Ideal para cualquier empresa comercial y/o servicio</li>
+            <li>Cumple con requisitos del SAT para la generacion de CFDI</li>
+            <li>Carga FDI de proveedores y/o comprobantes de compras</li>
+
+            <li>Alertas y administración de tareas</li>
+            <li>
+              Cuenta con modulo de ventas, compras, directorio de clientes y
+              proveedores, tesorería, entre otros
+            </li>
+          </ul>
+        </ItemArticle>
+      </Section>
     </>
   );
 }
