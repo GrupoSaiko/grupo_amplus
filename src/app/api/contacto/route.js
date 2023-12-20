@@ -19,7 +19,7 @@ export async function POST(req) {
       apiSecret: process.env.MAILJET_APPI_SECRET,
     });
 
-    mailjet.post("send", { version: "v3.1" }).request({
+    const data = await mailjet.post("send", { version: "v3.1"  }).request({
       Messages: [
         {
           From: {
@@ -52,9 +52,10 @@ export async function POST(req) {
     return NextResponse.json(
       {
         message: "Nos contactaremos lo más pronto posible 💻",
+        data:data.response.data
       },
       {
-        status: 200,
+        status: data.response.status,
       }
     );
   } catch (error) {
