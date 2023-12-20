@@ -9,6 +9,11 @@ export interface ContactFormI {
   phone: string;
 }
 
+export interface ContactFormBody extends ContactFormI{
+  device:string;
+  ip:string;
+}
+
 export interface ReturnUseContact extends StateFormContact {
   form: UseFormReturn<ContactFormI>;
   sendEmail: (formValues: ContactFormI) => Promise<void>;

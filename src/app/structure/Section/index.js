@@ -24,13 +24,7 @@ export default function Section({
 }) {
   return (
     <section className={ui.section} id={typeof(id)==='string' ? id : ''} style={{
-      background:`linear-gradient(
-        to ${bgDirection},
-        rgba(0, 0, 0, 0.85),
-        rgba(0, 0, 0, 0.95) 1%,
-        var(--color-surface-200, 0.15)
-      ),
-      url("${bgUrl}");`,
+      background:`linear-gradient(to ${bgDirection}, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95) 1%, var(--color-surface-200, 0.15)), url(${bgUrl})`,
       backgroundSize:'cover',
       backgroundPosition:'center'
     }}>

@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { validateContact } from "./validations";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useState } from "react";
 import { attemptSendEmail } from "@/app/helpers/contact/api";
 
 /**

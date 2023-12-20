@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import Mailjet from "node-mailjet";
 
 /**
  * Handle send a contact email to amplus
@@ -9,62 +9,48 @@ import { Resend } from "resend";
 export async function POST(req) {
   try {
     /**
-     * @type {import("@/app/customHooks/useContact/types").ContactFormI}
+     * @type {import("@/app/customHooks/useContact/types").ContactFormBody}
      */
-    const { email, enterprise, message, name, phone } = await req.json();
+    const { email, enterprise, message, name, phone, device, ip } =
+      await req.json();
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
-
-    const responseEmail = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: [process.env.RESEND_EMAIL_DEV],
-      subject: "Grupo Amplus - Contacto",
-      html: `
-      <p>
-        <b>Nombre:</b>
-        ${name}
-      </p>
-
-      <p>
-        <b>Correo:</b>
-        ${email}
-      </p>
-
-      <p>
-        <b>Teléfono:</b>
-        ${phone}
-      </p>
-
-      ${
-        enterprise !== null
-          ? `<p>
-            <b>Empresa:</b>${enterprise}
-          </p>`
-          : null
-      }
-
-      ${
-        message !== null
-          ? `<p>
-            <b>Mensaje:</b>${message}
-          </p>`
-          : null
-      }
-
-      `,
+    const mailjet = new Mailjet({
+      apiKey: process.env.MAILJET_APPI_KEY,
+      apiSecret: process.env.MAILJET_APPI_SECRET,
     });
 
-    if (responseEmail.data === null)
-      return NextResponse.json(
+    mailjet.post("send", { version: "v3.1" }).request({
+      Messages: [
         {
-          error: responseEmail.error.message,
-          message:
-            "No pudimos recibir el mensaje, estamos arreglando el sitio 😖",
+          From: {
+            Email: "redes@praxia.mx",
+            Name: "Redes Praxia",
+          },
+          To: [
+            {
+              Email: "aalardin@saiko.mx",
+              Name: "Adrian",
+            },
+            {
+              Email: "jperez@saiko.mx",
+              Name: "José Luis",
+            },
+          ],
+          TemplateID: 5478464,
+          TemplateLanguage: true,
+          Subject: "Praxia Documentos",
+          Variables: {
+            nombre: name,
+            correo: email,
+            telefono: phone,
+            empresa: enterprise,
+            mensaje: message,
+            ip,
+            dispositivo: device,
+          },
         },
-        {
-          status: responseEmail.error?.statusCode || 500,
-        }
-      );
+      ],
+    });
 
     return NextResponse.json(
       {
