@@ -1,14 +1,14 @@
 .contact {
-  display: flex;
-  justify-content: space-between;
-  overflow: auto;
-  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 47%);
+  justify-content: space-around;
 }
 
 .contact > * {
-  padding: 30px;
-  width: 100%;
+ width: 100%;
 }
+
+
 
 .module {
   display: flex;

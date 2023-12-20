@@ -12,10 +12,14 @@ import {
 } from "../structure/FormContact";
 import Maps from "../molecules/Maps";
 import GrupoSaikoSocialMedia from "../molecules/GrupoSaikoSocialMedia";
+import Title from "../atoms/Title";
 
 export default function Contacto() {
   return (
-    <div className={ui.contact}>
+    <>
+    <Title>Contacto</Title>
+
+    <div className={ui.contact} id="contacto">
       <div className={ui.formContact}>
         <p>
           En Grupo Amplus, estamos aquí para escucharte. Queremos ser parte de
@@ -47,5 +51,6 @@ export default function Contacto() {
         />
       </div>
     </div>
+    </>
   );
 }

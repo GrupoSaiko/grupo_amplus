@@ -141,6 +141,8 @@ section,
 button,
 a,
 li,
+label,
+input,
 footer{
   font-size: var(--lengthMd2) !important;
 }

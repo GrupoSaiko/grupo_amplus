@@ -1,11 +1,8 @@
-import Nosotros from "@/app/structure/nosotros";
 import ui from "./page.module.css";
-import Servicios from "./structure/servicios";
 import HomeAnimation from "./molecules/Home";
 import AmplusSlide1 from "./molecules/AmplusSlide1";
 import SlideText from "./molecules/SlideText";
 import GrupoAmplusSdeRL from "./molecules/GrupoAmplusSdeRL";
-import Productos from "./structure/productos";
 import ItemArticle from "./structure/ItemArticle";
 import Section from "./structure/Section";
 

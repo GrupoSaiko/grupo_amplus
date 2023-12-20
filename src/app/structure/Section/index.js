@@ -1,7 +1,7 @@
 import React from "react";
 import ui from "./styles.module.scss";
 
-const divider = {
+export const divider = {
   top: "/stripe_up.svg",
   topInverted: "/stripe_up_invertido.svg",
   bottom: "/stripe_down.svg",
