@@ -81,7 +81,7 @@ export default function Home() {
       </Section>
 
       <Section id='servicios' title="Servicios" bottomDivider="topInverted" topDivider="bottom">
-        <ItemArticle title="Servicios administrados" img="/imagen1.png">
+        <ItemArticle title="Servicios administrados" img="/imagen4.png">
           <p>
             Los servicios administrados de infraestructura de TI son la solución
             ideal para las empresas que quieren optimizar sus procesos, reducir
@@ -95,21 +95,23 @@ export default function Home() {
 
         <ItemArticle
           title="Servicios de soporte y acompañamiento"
-          img="/imagen2.png"
+          img="/imagen5.png"
           direction="rightToLeft"
         >
           <p>
             Te ofrecemos servicios de soporte y acompañamiento para el área de
-            TI Nuestro equipo de expertos está dedicado a proporcionar
+            TI.
+          </p>
+          <br />
+          <p>Nuestro equipo de expertos está dedicado a proporcionar
             soluciones rápidas y eficientes para mantener tus operaciones de TI
             funcionando sin problemas. Con un enfoque proactivo, nos anticipamos
             a los problemas antes de que ocurran, garantizando la continuidad y
             la eficiencia de tus sistemas. ¡Permítenos ser tu aliado confiable
-            en la gestión de TI!
-          </p>
+            en la gestión de TI!</p>
         </ItemArticle>
 
-        <ItemArticle title="Ejecución de proyectos" img="/imagen3.png">
+        <ItemArticle title="Ejecución de proyectos" img="/imagen6.png">
           <ul>
             <li>
               ¿Necesitas ayuda para mejorar la productividad y la colaboración
@@ -119,6 +121,7 @@ export default function Home() {
               ¿Quieres aprovechar al máximo las herramientas de Microsoft 365?
             </li>
           </ul>
+          <br />
           <p>
             En Amplus, te ofrecemos consultoría de proyectos específicos, tales
             como migración de correo, implementación de SharePoint,
@@ -133,13 +136,16 @@ export default function Home() {
 
         <ItemArticle
           title="Desarrollo de software"
-          img="/imagen3.png"
+          img="/imagen7.png"
           direction="rightToLeft"
         >
           <p>
             El desarrollo de software es el proceso de crear, diseñar, probar y
             mantener programas informáticos que resuelven problemas o satisfacen
-            necesidades específicas. Los servicios de desarrollo de software que
+            necesidades específicas. 
+          </p>
+          <br />
+          <p>Los servicios de desarrollo de software que
             te ofrecemos son de alta calidad, eficientes y asequibles. Contamos
             con un equipo de desarrolladores experimentados y capacitados en las
             mejores prácticas y metodologías del sector. Podemos desarrollar
@@ -147,8 +153,7 @@ export default function Home() {
             aplicación móvil, un sistema web, un software de gestión, un
             software educativo, etc. Nos adaptamos a tus requerimientos y
             expectativas, y te entregamos un producto final que supere tus
-            estándares de calidad.
-          </p>
+            estándares de calidad.</p>
         </ItemArticle>
       </Section>
 

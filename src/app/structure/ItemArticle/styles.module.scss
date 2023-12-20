@@ -19,8 +19,8 @@
     margin: 0 0 10px 0;
   }
 
-  p {
-    font-size: var(--lengthMd3);
+  * {
+    font-size: var(--lengthMd3) !important;
   }
   margin:0 0 100px 0;
 }

@@ -27,7 +27,7 @@ export default function Section({
       ) : <div className={ui.topDivider}></div>}
 
       <h1>{title}</h1>
-      <img src="lines.svg" alt="decoracion_titulo" />
+      <img className={ui.decorationTitle} src="lines.svg" alt="decoracion_titulo" />
 
       {children}
 

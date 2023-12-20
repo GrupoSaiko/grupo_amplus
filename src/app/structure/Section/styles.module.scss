@@ -4,7 +4,6 @@
   > img {
     object-fit: cover;
     height: 30px;
-    // margin: 0 0 40px 0;
   }
 
   > * {
@@ -33,6 +32,12 @@
 
 .lastDivider {
   padding: 70px 0 0 0;
+}
+
+.decorationTitle{
+  width: 100px;
+  object-fit: fill !important;
+  margin:0 15% 50px 15%;
 }
 
 .divider {
