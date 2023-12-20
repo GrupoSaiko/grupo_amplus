@@ -64,6 +64,7 @@
 .menuMobile svg {
   color: var(--primaryColor);
   fill: var(--primaryColor);
+  height: 75%;
 }
 
 .expandMenuMobile {
