@@ -27,10 +27,7 @@ export async function POST(req) {
             Name: "Redes Praxia",
           },
           To: [
-            {
-              Email: "aalardin@saiko.mx",
-              Name: "Adrian",
-            },
+            
             {
               Email: "jperez@saiko.mx",
               Name: "José Luis",

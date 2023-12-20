@@ -4,24 +4,14 @@ import { ClientJS } from 'clientjs';
 
 /**
  * Attempt send the email for contact
- * @param {import('@/app/customHooks/useContact/types').ContactFormI} contactValues - Form data
+ * @param {import('@/app/customHooks/useContact/types').ContactFormBody} contactValues - Form data
  */
 export async function attemptSendEmail(contactValues) {
 
-  const client = new ClientJS();
-
-  const browser = client.getBrowser();
-  const os = client.getOS();
-
-  const device = `<p>Intento de contacto por: Dispositivo ${os} en navegador ${browser}</p>`;
-
   try {
-    const ip = await ipOverview();
 
     const body = JSON.stringify({
-      ...contactValues,
-      device,
-      ip
+      ...contactValues
     });
 
     const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/contacto`, {

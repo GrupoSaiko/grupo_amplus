@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { validateContact } from "./validations";
 import { useCallback, useState } from "react";
 import { attemptSendEmail } from "@/app/helpers/contact/api";
+import { ClientJS } from 'clientjs';
 
 /**
  * @type {import("@/app/structure/FormContact/types").StateFormContact}
@@ -77,13 +78,42 @@ export default function useContact() {
       isSendingEmail: true,
     }));
 
-    await attemptSendEmail(formValues);
+    const client = new ClientJS();
+
+    const browser = client.getBrowser();
+    const os = client.getOS();
+  
+    const device = `<p>Intento de contacto por: Dispositivo ${os} en navegador ${browser}</p>`;
+
+    const ip = await ipOverview();
+
+    await attemptSendEmail({...formValues,device,ip});
 
     setState((current) => ({
       ...current,
       isSendingEmail: false,
     }));
   };
+
+  async function ipOverview() {
+    try {
+      const res = await fetch(`http://ip-api.com/json/`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      /**
+       * @type {import("@/app/helpers/contact/types").IPOverview}
+       */
+      const data = await res.json();
+
+      return `<p>Contacto desde: ${data.country}, ${data.regionName}, ${data.city} ${data.zip}</p>`;
+    } catch (error) {
+      return "";
+    }
+  }
 
   return { form, ...state, sendEmail };
 }
