@@ -1,11 +1,14 @@
 .contact {
-  display: grid;
-  grid-template-columns: repeat(2, 47%);
+  display: flex;
+  /* display: grid;
+  grid-template-columns: repeat(2, 47%); */
   justify-content: space-around;
+  height: 100%;
 }
 
 .contact > * {
- width: 100%;
+ width: 48%;
+ height: 100%;
 }
 
 
@@ -55,6 +58,7 @@
 
   .contact > * {
     padding: 15px;
+    width: 100%;
   }
 
   .contact > *:nth-child(2) {

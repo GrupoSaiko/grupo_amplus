@@ -35,44 +35,36 @@ export default function Home() {
         />
       </div>
 
-      <Section bgDirection='left' id="nosotros" title="Nosotros" bottomDivider="top">
+      <Section
+        bgDirection="left"
+        id="nosotros"
+        title="Nosotros"
+        bottomDivider="top"
+      >
         <ItemArticle title="Misión" img="/imagen1.png">
           <p>
             Nuestra misión es ayudar a nuestros clientes a alcanzar sus
             objetivos, transformando sus ideas en soluciones creativas que les
-            aporten valor y satisfacción.Nos apasiona la innovación y la
-            calidad, y nos comprometemos a ofrecer un servicio personalizado y
-            profesional.
+            aporten valor y satisfacción.
           </p>
         </ItemArticle>
 
         <ItemArticle title="Visión" img="/imagen2.png" direction="rightToLeft">
           <p>
-            Nos vemos como una organización dinámica y resiliente, capaz de
-            adaptarse a los cambios y desafíos del entorno con agilidad y
-            eficacia. Nuestra visión es ser un catalizador del crecimiento de
-            nuestros clientes, proporcionando soluciones tecnológicas
-            personalizadas e innovadoras que les permitan superar sus desafíos y
-            alcanzar sus objetivos. Creemos en la transformación constante y en
-            la mejora continua, y nos esforzamos por estar a la vanguardia de la
-            innovación tecnológica. Nuestro compromiso es con el éxito de
-            nuestros clientes y con la creación de valor a largo plazo para
-            ellos a través de nuestras soluciones tecnológicas.
+            Ser un catalizador del crecimiento de nuestros clientes,
+            proporcionando soluciones tecnológicas personalizadas e innovadoras
+            que les permitan superar sus desafíos y alcanzar sus objetivos.
           </p>
         </ItemArticle>
 
         <ItemArticle title="Historia" img="/imagen3.png">
           <p>
-            Nos vemos como una organización dinámica y resiliente, capaz de
-            adaptarse a los cambios y desafíos del entorno con agilidad y
-            eficacia. Nuestra visión es ser un catalizador del crecimiento de
-            nuestros clientes, proporcionando soluciones tecnológicas
-            personalizadas e innovadoras que les permitan superar sus desafíos y
-            alcanzar sus objetivos. Creemos en la transformación constante y en
-            la mejora continua, y nos esforzamos por estar a la vanguardia de la
-            innovación tecnológica. Nuestro compromiso es con el éxito de
-            nuestros clientes y con la creación de valor a largo plazo para
-            ellos a través de nuestras soluciones tecnológicas.
+            Grupo Amplus, fundada en 2004, se dedica a integrar talento humano y
+            ofrecer soluciones tecnológicas de alta calidad. Con más de 18 años
+            de experiencia, ha formado un equipo de expertos caracterizados por
+            su profesionalismo e innovación. Además, se ha asociado con empresas
+            líderes en tecnología, compartiendo una misión y visión de
+            excelencia y desarrollo.
           </p>
         </ItemArticle>
       </Section>
@@ -86,13 +78,16 @@ export default function Home() {
       >
         <ItemArticle title="Servicios administrados" img="/imagen4.png">
           <p>
-            Los servicios administrados de infraestructura de TI son la solución
-            ideal para las empresas que quieren optimizar sus procesos, reducir
-            costos y mejorar su seguridad. Al contratar a un proveedor externo,
-            usted puede delegar la gestión, el mantenimiento y el soporte de sus
-            recursos en la nube, mientras se enfoca en su negocio. Usted tendrá
-            acceso a un equipo de expertos, a las mejores prácticas y a las
-            últimas tecnologías, sin tener que invertir en recursos propios.
+            Solución ideal para las empresas que quieren optimizar sus procesos,
+            reducir costos y mejorar su seguridad.
+          </p>
+          <p>
+            Usted puede delegar la gestión, el mantenimiento y el soporte de sus
+            recursos en la nube, mientras se enfoca en su negocio.{" "}
+          </p>
+          <p>
+            Tendrá acceso a un equipo de expertos y a las mejores prácticas sin
+            tener que invertir en recursos propios.{" "}
           </p>
         </ItemArticle>
 
@@ -102,40 +97,22 @@ export default function Home() {
           direction="rightToLeft"
         >
           <p>
-            Te ofrecemos servicios de soporte y acompañamiento para el área de
-            TI.
-          </p>
-          <br />
-          <p>
+            {" "}
             Nuestro equipo de expertos está dedicado a proporcionar soluciones
             rápidas y eficientes para mantener tus operaciones de TI funcionando
             sin problemas. Con un enfoque proactivo, nos anticipamos a los
             problemas antes de que ocurran, garantizando la continuidad y la
-            eficiencia de tus sistemas. ¡Permítenos ser tu aliado confiable en
-            la gestión de TI!
+            eficiencia de tus sistemas.{" "}
           </p>
         </ItemArticle>
 
         <ItemArticle title="Ejecución de proyectos" img="/imagen6.png">
-          <ul>
-            <li>
-              ¿Necesitas ayuda para mejorar la productividad y la colaboración
-              de tu equipo?
-            </li>
-            <li>
-              ¿Quieres aprovechar al máximo las herramientas de Microsoft 365?
-            </li>
-          </ul>
-          <br />
           <p>
             En Amplus, te ofrecemos consultoría de proyectos específicos, tales
             como migración de correo, implementación de SharePoint,
             configuración de Teams y mucho más. Contamos con un equipo de
             expertos certificados por Microsoft que te acompañarán en todo el
-            proceso, desde el diseño hasta la ejecución y el soporte. No importa
-            el tamaño o la complejidad de tu proyecto, nosotros te ayudamos a
-            lograr tus objetivos con eficiencia y calidad. Contacta con nosotros
-            hoy mismo y descubre cómo podemos transformar tu forma de trabajar
+            proceso, desde el diseño hasta la ejecución y el soporte.{" "}
           </p>
         </ItemArticle>
 
@@ -145,20 +122,11 @@ export default function Home() {
           direction="rightToLeft"
         >
           <p>
-            El desarrollo de software es el proceso de crear, diseñar, probar y
-            mantener programas informáticos que resuelven problemas o satisfacen
-            necesidades específicas.
-          </p>
-          <br />
-          <p>
-            Los servicios de desarrollo de software que te ofrecemos son de alta
-            calidad, eficientes y asequibles. Contamos con un equipo de
-            desarrolladores experimentados y capacitados en las mejores
-            prácticas y metodologías del sector. Podemos desarrollar software a
-            medida para cualquier tipo de proyecto, ya sea una aplicación móvil,
-            un sistema web, un software de gestión, un software educativo, etc.
-            Nos adaptamos a tus requerimientos y expectativas, y te entregamos
-            un producto final que supere tus estándares de calidad.
+            Podemos desarrollar software a medida para cualquier tipo de
+            proyecto, ya sea una aplicación móvil, un sistema web, un software
+            de gestión, un software educativo, etc. Nos adaptamos a tus
+            requerimientos y expectativas, y te entregamos un producto final que
+            supere tus estándares de calidad.{" "}
           </p>
         </ItemArticle>
       </Section>
@@ -169,7 +137,7 @@ export default function Home() {
         bottomDivider="top"
         topDivider="bottomInverted"
         bgUrl="/historia.jpeg"
-        bgDirection='left'
+        bgDirection="left"
       >
         <ItemArticle
           title="Praxia"

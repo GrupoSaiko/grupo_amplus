@@ -25,15 +25,19 @@ export default function Maps({
   link = null,
 }) {
   return (
-    <div className={ui.googleMaps}>
-      <div className={ui.loadingMap}>
-        <p>Cargando mapa</p>
-        <Spinner />
-      </div>
-
+    <>
       <div className={ui.titleMap}>
         <p>{title}</p>
         <div>{contact}</div>
+      </div>
+
+      <div className={ui.googleMaps}>
+        <div className={ui.loadingMap}>
+          <p>Cargando mapa</p>
+          <Spinner />
+        </div>
+
+        <iframe src={src}></iframe>
       </div>
 
       <div className={ui.footerMap}>
@@ -47,7 +51,6 @@ export default function Maps({
 
         {phone !== null ? <p>{phone}</p> : null}
       </div>
-      <iframe src={src}></iframe>
-    </div>
+    </>
   );
 }

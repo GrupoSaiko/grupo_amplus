@@ -1,5 +1,4 @@
-.button {
-    /* width: 100%; */
+/* .button {
   --clr: var(--color-surface-100);
   --outline: 2px solid var(--color-primary-100);
   padding: 1rem 1.25rem;
@@ -31,4 +30,19 @@
     --outline: 2px solid var(--color-primary-600);
     color: var(--color-primary-600);
   }
+} */
+
+.button{
+  background: var(--blue);
+  font-size: var(--sizeMd2);
+  padding: 20px 10px;
+  border: none;
+  transition: all 0.2s ease;
+  border:2px solid var(--blue);
+  font-weight: bold;
+}
+
+.button:hover{
+  background: transparent;
+  color:var(--blue);
 }

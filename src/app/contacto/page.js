@@ -22,7 +22,7 @@ export default function Contacto() {
     <div className={ui.contact} id="contacto">
       <div className={ui.formContact}>
         <p>
-          En Grupo Amplus, estamos aquí para escucharte. Queremos ser parte de
+          Queremos ser parte de
           tus proyectos, responder a tus preguntas y ayudarte a alcanzar tus
           metas. Ya sea que tengas una pregunta específica, una sugerencia
           brillante , nuestro equipo está listo para recibir tus mensajes.
@@ -43,7 +43,7 @@ export default function Contacto() {
       <div>
         <Maps
           contact={<GrupoSaikoSocialMedia withText={false} />}
-          address="Blvd Gustavo Díaz Ordaz 3057, Santa María, 64650 Monterrey, N.L."
+          address="Blvd Gustavo Díaz Ordaz 3057, Col. Santa María, 64650 Monterrey, N.L."
           phone="+52 81 8215 5100"
           title="Grupo amplus"
           link="https://maps.app.goo.gl/nugDPe1aL3KcACwM9"
