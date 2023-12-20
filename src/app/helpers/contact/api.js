@@ -1,6 +1,5 @@
 import Swal from "sweetalert2";
 import { isOkRes } from "../api";
-import { ClientJS } from 'clientjs';
 
 /**
  * Attempt send the email for contact
