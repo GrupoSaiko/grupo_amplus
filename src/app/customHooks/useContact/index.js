@@ -1,3 +1,5 @@
+"use client"
+
 import { useForm } from "react-hook-form";
 import { validateContact } from "./validations";
 import { useCallback, useState } from "react";
