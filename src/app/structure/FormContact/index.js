@@ -12,7 +12,7 @@ import Error from "@/app/atoms/Error";
 import Button from "@/app/atoms/Button";
 import Spinner from "@/app/atoms/Spinner";
 import { v4 as uuidv4 } from "uuid";
-import { ClientJS } from 'clientjs';
+import { ClientJS } from 'clientjs/dist/client.base.min.js';
 
 /**
  * @type {import("react").Context<import("./types").ContextFormContact|undefined>}
