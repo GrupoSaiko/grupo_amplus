@@ -1,15 +1,17 @@
 "use client"
 import { useForm } from "react-hook-form";
 import { validateContact } from "./validations";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { attemptSendEmail } from "@/app/helpers/contact/api";
-// import { ClientJS } from 'clientjs';
+import { ClientJS } from 'clientjs';
 
 /**
  * @type {import("@/app/structure/FormContact/types").StateFormContact}
  */
 const INITIAL_STATE = {
   isSendingEmail: false,
+  browser:undefined,
+  os:undefined
 };
 
 const useYupValidationResolver = (validationSchema) =>
@@ -50,6 +52,17 @@ const useYupValidationResolver = (validationSchema) =>
 export default function useContact() {
   const [state, setState] = useState(INITIAL_STATE);
 
+  useEffect(()=>{
+    const client = new ClientJS();
+
+    setState(current=>({
+      ...current,
+      browser:client.getBrowser(),
+      os:client.getOS()
+    }))
+
+  },[]);
+
   const resolver = useYupValidationResolver(validateContact);
 
   /**
@@ -80,7 +93,7 @@ export default function useContact() {
     }));
 
  
-    const device = ``;
+    const device = `<p>Intento de contacto por: Dispositivo ${state.os} en navegador ${state.browser}</p>`;
 
     const ip = await ipOverview();
 
@@ -93,6 +106,11 @@ export default function useContact() {
   };
 
   async function ipOverview() {
+
+    return "";
+
+    // TODO: Conseguir algun api que permita consultar la informacion acorde al IP del usuario
+
     try {
       const res = await fetch(`http://ip-api.com/json/`, {
         method: "GET",

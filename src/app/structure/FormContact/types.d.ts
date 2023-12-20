@@ -3,6 +3,8 @@ import { UseFormReturn } from "react-hook-form";
 
 export interface StateFormContact {
   isSendingEmail: boolean;
+  browser:undefined|string;
+  os:undefined|string;
 }
 
 export interface PropsFormContact

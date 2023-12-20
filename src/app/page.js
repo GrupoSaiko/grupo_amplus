@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <div className={ui.slide1}>
         <video autoPlay muted loop>
-          <source src="/Inicio 6.0 Movil.mp4" type="video/mp4" />
+          <source src="/Inicio 6.1.mp4" type="video/mp4" />
         </video>
         {/* <HomeAnimation
           child1={
