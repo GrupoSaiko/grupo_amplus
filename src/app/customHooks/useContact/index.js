@@ -1,10 +1,9 @@
 "use client"
-
 import { useForm } from "react-hook-form";
 import { validateContact } from "./validations";
 import { useCallback, useState } from "react";
 import { attemptSendEmail } from "@/app/helpers/contact/api";
-import { ClientJS } from 'clientjs';
+// import { ClientJS } from 'clientjs';
 
 /**
  * @type {import("@/app/structure/FormContact/types").StateFormContact}
@@ -80,12 +79,12 @@ export default function useContact() {
       isSendingEmail: true,
     }));
 
-    const client = new ClientJS();
+    // const client = new ClientJS();
 
-    const browser = client.getBrowser();
-    const os = client.getOS();
+    // const browser = client.getBrowser();
+    // const os = client.getOS();
   
-    const device = `<p>Intento de contacto por: Dispositivo ${os} en navegador ${browser}</p>`;
+    // const device = `<p>Intento de contacto por: Dispositivo ${os} en navegador ${browser}</p>`;
 
     const ip = await ipOverview();
 
