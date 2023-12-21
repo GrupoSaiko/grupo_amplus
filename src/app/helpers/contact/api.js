@@ -1,6 +1,8 @@
 import Swal from "sweetalert2";
 import { isOkRes } from "../api";
 
+const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN === undefined ? "" : process.env.NEXT_PUBLIC_DOMAIN ;
+
 /**
  * Attempt send the email for contact
  * @param {import('@/app/customHooks/useContact/types').ContactFormBody} contactValues - Form data
@@ -13,7 +15,7 @@ export async function attemptSendEmail(contactValues) {
       ...contactValues
     });
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/contacto`, {
+    const res = await fetch(`${BASE_URL}/api/contacto`, {
       method: "POST",
       body,
       headers: {
