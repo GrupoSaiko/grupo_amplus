@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
-  output: "standalone"
+  output: "export"
 };
 
 module.exports = nextConfig;
