@@ -13,26 +13,6 @@ export default function Home() {
         <video autoPlay muted loop>
           <source src="/Inicio 6.1.mp4" type="video/mp4" />
         </video>
-        {/* <HomeAnimation
-          child1={
-            <section className={ui.inicio}>
-              <SlideText
-                animationSpeed={2}
-                words={["AMPLUS", "TECNOLOGÍA", "INSPIRACIÓN"]}
-              />
-            </section>
-          }
-          child2={
-            <div className={ui.slideA}>
-              <AmplusSlide1 />
-            </div>
-          }
-          child3={
-            <div className={ui.slideB}>
-              <GrupoAmplusSdeRL />
-            </div>
-          }
-        /> */}
       </div>
 
       <Section
@@ -78,7 +58,7 @@ export default function Home() {
       >
         <ItemArticle title="Servicios administrados" img="/imagen4.png">
           <p>
-            Solución ideal para las empresas que quieren optimizar sus procesos,
+            Solución ideal para las empresas que necesitan optimizar sus procesos,
             reducir costos y mejorar su seguridad.
           </p>
           <p>
@@ -145,12 +125,12 @@ export default function Home() {
         >
           <ul>
             <li>Ideal para cualquier empresa comercial y/o servicio</li>
-            <li>Cumple con requisitos del SAT para la generacion de CFDI</li>
-            <li>Carga FDI de proveedores y/o comprobantes de compras</li>
+            <li>Cumple con requisitos del SAT para la generación de CFDI</li>
+            <li>Carga CFDI de proveedores y/o comprobantes de compras</li>
 
             <li>Alertas y administración de tareas</li>
             <li>
-              Cuenta con modulo de ventas, compras, directorio de clientes y
+              Cuenta con módulo de ventas, compras, directorio de clientes y
               proveedores, tesorería, entre otros
             </li>
           </ul>
