@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  poweredByHeader: false,
-  output: "export"
+  poweredByHeader: false
 };
 
 module.exports = nextConfig;
