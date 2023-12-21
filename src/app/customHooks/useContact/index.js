@@ -94,13 +94,8 @@ export default function useContact() {
   };
 
   async function ipOverview() {
-
-    return "";
-
-    // TODO: Conseguir algun api que permita consultar la informacion acorde al IP del usuario
-
     try {
-      const res = await fetch(`http://ip-api.com/json/`, {
+      const res = await fetch(`https://ipapi.co/json/`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -112,7 +107,7 @@ export default function useContact() {
        */
       const data = await res.json();
 
-      return `<p>Contacto desde: ${data.country}, ${data.regionName}, ${data.city} ${data.zip}</p>`;
+      return `<p>Contacto desde: ${data.country_name}, ${data.region}, ${data.city} ${data.postal}</p>`;
     } catch (error) {
       return "";
     }
