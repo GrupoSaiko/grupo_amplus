@@ -13,7 +13,7 @@ export default function HomeVideo() {
   }, []);
 
   return (
-    <video autoPlay muted loop>
+    <video autoPlay muted loop playsinline>
       {typeof state === "string" ? (
         <source src={state} type="video/mp4" />
       ) : null}
