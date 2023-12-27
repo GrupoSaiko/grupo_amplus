@@ -137,9 +137,10 @@ button,
 a,
 li,
 label,
+textarea,
 input,
 footer{
-  font-size: var(--lengthMd2) !important;
+  font-size: var(--lengthMd3) !important;
 }
 
 h1 {

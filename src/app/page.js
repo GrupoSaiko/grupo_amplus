@@ -1,8 +1,5 @@
+import HomeVideo from "./atoms/HomeVideo";
 import ui from "./page.module.css";
-import HomeAnimation from "./molecules/Home";
-import AmplusSlide1 from "./molecules/AmplusSlide1";
-import SlideText from "./molecules/SlideText";
-import GrupoAmplusSdeRL from "./molecules/GrupoAmplusSdeRL";
 import ItemArticle from "./structure/ItemArticle";
 import Section from "./structure/Section";
 
@@ -10,9 +7,7 @@ export default function Home() {
   return (
     <>
       <div className={ui.slide1}>
-        <video autoPlay muted loop>
-          <source src="/Inicio 6.1.mp4" type="video/mp4" />
-        </video>
+        <HomeVideo />
       </div>
 
       <Section
@@ -58,8 +53,8 @@ export default function Home() {
       >
         <ItemArticle title="Servicios administrados" img="/imagen4.png">
           <p>
-            Solución ideal para las empresas que necesitan optimizar sus procesos,
-            reducir costos y mejorar su seguridad.
+            Solución ideal para las empresas que necesitan optimizar sus
+            procesos, reducir costos y mejorar su seguridad.
           </p>
           <p>
             Usted puede delegar la gestión, el mantenimiento y el soporte de sus
