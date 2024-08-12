@@ -1,3 +1,4 @@
+import Link from "next/link";
 import HomeVideo from "./atoms/HomeVideo";
 import ui from "./page.module.css";
 import ItemArticle from "./structure/ItemArticle";
@@ -126,9 +127,15 @@ export default function Home() {
             <li>Alertas y administración de tareas</li>
             <li>
               Cuenta con módulo de ventas, compras, directorio de clientes y
-              proveedores, tesorería, entre otros
+              proveedores, tesorería, entre otros.
             </li>
           </ul>
+
+          <Link style={{
+            fontSize:'var(--lengthMd2) !important;'
+          }} className={ui.link} href="https://www.gruposaiko.com/praxia-terminos-y-condiciones-v1-0-0/">
+            Términos y condiciones
+          </Link>
         </ItemArticle>
       </Section>
     </>
