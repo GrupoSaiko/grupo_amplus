@@ -3,10 +3,15 @@ import HomeVideo from "./atoms/HomeVideo";
 import ui from "./page.module.css";
 import ItemArticle from "./structure/ItemArticle";
 import Section from "./structure/Section";
+import Menu from "./Menu";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
     <>
+        <Menu />
+
+
       <div className={ui.slide1}>
         <HomeVideo />
       </div>
@@ -138,6 +143,9 @@ export default function Home() {
           </Link>
         </ItemArticle>
       </Section>
+
+      <Footer />
+
     </>
   );
 }
