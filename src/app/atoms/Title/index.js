@@ -10,7 +10,7 @@ export default function Title(props) {
   return (
     <div className={ui.title}>
       <h1 {...props}></h1>
-      <img src="lines.svg" alt="decoracion_titulo" />
+      <img src="/lines.svg" alt="decoracion_titulo" />
     </div>
   );
 }

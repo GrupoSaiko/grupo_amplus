@@ -133,7 +133,7 @@ export default function Home() {
 
           <Link style={{
             fontSize:'var(--lengthMd2) !important;'
-          }} className={ui.link} href="https://www.gruposaiko.com/praxia-terminos-y-condiciones-v1-0-0/">
+          }} className={ui.link} href="/praxia/terminos_y_condiciones">
             Términos y condiciones
           </Link>
         </ItemArticle>
