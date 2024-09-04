@@ -8,10 +8,11 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "engines": { 
-    "node": ">=18.17.0" 
-  } ,
+  "engines": {
+    "node": ">=18.17.0"
+  },
   "dependencies": {
+    "@auth0/auth0-react": "^2.2.4",
     "@hookform/error-message": "^2.0.1",
     "@tiptap/pm": "^2.1.12",
     "@tiptap/react": "^2.1.12",

@@ -2,6 +2,7 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import { ContextMenu } from "..";
+import OAuthLogin from "@/app/molecules/OAuthLogin";
 
 export default function OptionsNavigation() {
 
@@ -18,6 +19,8 @@ const hook = useContext(ContextMenu);
       <Link onClick={hook.closeMenu} href={"/#productos"}>Productos</Link>
 
       <Link onClick={hook.closeMenu} href="/#contacto">Contacto</Link>
+
+      <OAuthLogin/>
     </>
   );
 }

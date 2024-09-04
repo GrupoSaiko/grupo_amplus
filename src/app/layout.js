@@ -1,24 +1,26 @@
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import "./not-found.css";
-import Menu from "./Menu";
-import Footer from "./Footer";
-import Head from "next/head";
+import OAtuh from "@/app/OAuth";
 
 const inter = Noto_Sans({ subsets: ["latin"], weight: "300" });
 
+/**
+ * @type {import("next").Metadata}
+ */
 export const metadata = {
   title: "Grupo Amplus",
   description: "Grupo Amplus",
+  creator: "Grupo Amplus",  
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className={inter.className}>
-        {/* <Menu /> */}
-        <main>{children}</main>
-        {/* <Footer /> */}
+        <OAtuh>
+          <main>{children}</main>
+        </OAtuh>
       </body>
     </html>
   );
