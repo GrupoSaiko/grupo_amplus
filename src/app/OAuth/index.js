@@ -9,6 +9,7 @@ export default function OAuth({ children }) {
       clientId={process.env.NEXT_PUBLIC_CLIENT_ID}
       authorizationParams={{
         redirect_uri: process.env.NEXT_PUBLIC_URL_DOMAIN,
+        ui_locales: "es",
       }}
     >
       {children}
