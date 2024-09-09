@@ -9,8 +9,7 @@ import Footer from "./Footer";
 export default function Home() {
   return (
     <>
-        <Menu />
-
+      <Menu />
 
       <div className={ui.slide1}>
         <HomeVideo />
@@ -136,16 +135,19 @@ export default function Home() {
             </li>
           </ul>
 
-          <Link style={{
-            fontSize:'var(--lengthMd2) !important;'
-          }} className={ui.link} href="/praxia/terminos_y_condiciones">
+          <Link
+            style={{
+              fontSize: "var(--lengthMd2) !important;",
+            }}
+            className={ui.link}
+            href="/praxia/terminos_y_condiciones"
+          >
             Términos y condiciones
           </Link>
         </ItemArticle>
       </Section>
 
       <Footer />
-
     </>
   );
 }

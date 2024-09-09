@@ -17,6 +17,7 @@
     "@tiptap/pm": "^2.1.12",
     "@tiptap/react": "^2.1.12",
     "@tiptap/starter-kit": "^2.1.12",
+    "auth0-lock": "^12.5.1",
     "clientjs": "^0.2.1",
     "gsap": "^3.12.3",
     "leaflet": "^1.9.4",

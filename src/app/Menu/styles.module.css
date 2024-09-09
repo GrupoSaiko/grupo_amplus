@@ -98,7 +98,18 @@
   right: 100%;
 }
 
+.profileDesktop{
+  height: 75%;
+}
+
+
 @media screen and (max-width: 768px) {
+
+  .profileDesktop{
+    display: none;
+    height: 0;
+  }
+
   .menuMobile {
     display: flex;
   }

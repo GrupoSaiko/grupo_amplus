@@ -8,8 +8,13 @@ export default function OAuth({ children }) {
       domain={process.env.NEXT_PUBLIC_DOMAIN}
       clientId={process.env.NEXT_PUBLIC_CLIENT_ID}
       authorizationParams={{
-        redirect_uri: process.env.NEXT_PUBLIC_URL_DOMAIN,
-        ui_locales: "es",
+        redirect_uri:
+          typeof window !== "undefined"
+            ? window.location.origin
+            : process.env.NEXT_PUBLIC_URL_DOMAIN,
+
+        ui_locales: "es-419",
+        display: "popup",
       }}
     >
       {children}

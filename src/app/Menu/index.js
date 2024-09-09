@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useRef, createContext } from "react";
 import ui from "./styles.module.css";
 import OptionsNavigation from "./OptionsNavigation";
+import ProfileOverview from "../structure/ProfileOverview";
 
 /**
  * @type {import("react").Context<import("./types").ContextMenu|undefined>}
@@ -28,9 +29,17 @@ export default function Menu() {
       <nav className={ui.nav}>
         <div className={ui.navItems}>
           <Link className={ui.logo} onClick={closeMenu} href="/">
-            <img className="cursor" src="/amplus_logo.svg" alt="logo_de_amplus" />
+            <img
+              className="cursor"
+              src="/amplus_logo.svg"
+              alt="logo_de_amplus"
+            />
           </Link>
           <OptionsNavigation />
+        </div>
+
+        <div className={ui.profileDesktop}>
+          <ProfileOverview />
         </div>
 
         <button onClick={toggleMenu} className={ui.menuMobile}>
@@ -53,6 +62,7 @@ export default function Menu() {
         ref={mobileMenu}
         className={`${ui.expandMenuMobile} ${ui.displayMenu}`}
       >
+        <ProfileOverview/>
         <OptionsNavigation />
       </div>
     </ContextMenu.Provider>
