@@ -7,7 +7,7 @@ export default function ProfileOverview() {
   const auth = useAuth0();
 
   const handleLogin = async () => {
-    await auth.loginWithPopup();
+    await auth.loginWithRedirect();  
   };
 
   if (auth.isLoading) return <></>;

@@ -3,8 +3,13 @@ import React from "react";
 import { Auth0Provider } from "@auth0/auth0-react";
 
 export default function OAuth({ children }) {
+  const onRedirectCallback = (appState) => {
+    window.location.href = "https://gestor-pro-kappa.vercel.app/"; // Replace with your external URL
+  };
+
   return (
     <Auth0Provider
+      onRedirectCallback={onRedirectCallback}
       domain={process.env.NEXT_PUBLIC_DOMAIN}
       clientId={process.env.NEXT_PUBLIC_CLIENT_ID}
       authorizationParams={{
