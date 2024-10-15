@@ -38,9 +38,9 @@ export default function Menu() {
           <OptionsNavigation />
         </div>
 
-        <div className={ui.profileDesktop}>
+        {/* <div className={ui.profileDesktop}>
           <ProfileOverview />
-        </div>
+        </div> */}
 
         <button onClick={toggleMenu} className={ui.menuMobile}>
           <svg
