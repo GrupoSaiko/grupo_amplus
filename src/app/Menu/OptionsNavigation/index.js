@@ -27,6 +27,9 @@ export default function OptionsNavigation() {
       <Link onClick={hook.closeMenu} href="/#contacto">
         Contacto
       </Link>
+
+      <Link href={`https://gestorpro.azurewebsites.net/`}>Gestor Pro</Link>
+
     </>
   );
 }
